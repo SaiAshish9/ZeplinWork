@@ -6,9 +6,9 @@ import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import JoinUs from "./components/JoinUs";
 import Badges from "./components/Badges";
-import Test from "./assets/svgs/test";
+// import Test from "./assets/svgs/test";
 import Experience from "./components/Experience";
-// import Tasks from "./components/Tasks";
+import Tasks from "./components/Tasks";
 import Section3 from "./components/Section3";
 import Section1 from "./components/Section1";
 
