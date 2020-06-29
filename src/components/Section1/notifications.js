@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography } from "antd";
+import {  Typography } from "antd";
 import AccountImg from "../../assets/svgs/account.svg";
 import BriefcaseImg from "../../assets/svgs/briefcase.svg";
 import AwardImg from "../../assets/svgs/award.svg";

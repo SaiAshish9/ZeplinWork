@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography } from "antd";
+import { Typography } from "antd";
 import ParcifyCircle from "../../assets/images/ParcifyCircle.png";
 import CoinImg from "../../assets/svgs/rupee_1.svg"
 import CalendarImg from "../../assets/svgs/calendar.svg"

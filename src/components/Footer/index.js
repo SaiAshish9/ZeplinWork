@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Typography } from "antd";
+import { Row, Col, Typography } from "antd";
 import Logo from "../../assets/images/logo.png";
 import AppStore from "../../assets/svgs/appStore";
 import Heart from '../../assets/svgs/heart'

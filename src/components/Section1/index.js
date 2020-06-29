@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography, Button } from "antd";
+import { Row, Col } from "antd";
 import PinkGrid from "../../assets/svgs/pinkGrid";
 import Wallet from "../../assets/svgs/wallet";
 import Verify from "./verify";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography, Collapse } from "antd";
+import { Row, Col, Typography } from "antd";
 import JobsComponent from "../../assets/svgs/jobsComplete";
 import ArrowBow from "../../assets/svgs/arrowBow";
 import WorkRm from "../../assets/svgs/workRm";
@@ -58,7 +58,6 @@ const Tasks = () => (
               fontWeight: 700,
               opacity: 0.8,
               marginTop: 10,
-              fontWeight: "3rem",
               marginLeft:"9.5%"
             }}
           >
