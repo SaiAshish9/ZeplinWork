@@ -1,32 +1,40 @@
-import React,{useEffect} from "react";
+import React,{useEffect,Suspense,lazy} from "react";
 import "./App.css";
 import "antd/dist/antd.css";
 import "aos/dist/aos.css"
 import 'animate.css/animate.min.css';
-import Navbar from "./components/Navbar";
-import GetStarted from "./components/GetStarted";
-import Footer from "./components/Footer";
-import JoinUs from "./components/JoinUs";
-import Badges from "./components/Badges";
-import Experience from "./components/Experience";
-import Tasks from "./components/Tasks";
-import Section3 from "./components/Section3";
-import Section1 from "./components/Section1";
 import Aos from "aos";
+import "./assets/fonts/Inter-Regular.ttf"
+import "./assets/fonts/Inter-SemiBold.ttf";
+import "./assets/fonts/Inter-Bold.ttf";
+import "./assets/fonts/Inter-Light.ttf";
+import "./assets/fonts/Inter-ExtraLight.ttf";
+
+const Navbar=lazy(()=> import("./components/Navbar"))
+const GetStarted =lazy(()=>import("./components/GetStarted"))
+const Footer = lazy(()=> import("./components/Footer"))
+const JoinUs=lazy(()=>import("./components/JoinUs"))
+const Badges =lazy(()=> import("./components/Badges"))
+const Experience =lazy(()=> import("./components/Experience"))
+const Tasks =lazy(()=>import("./components/Tasks"))
+const Section3 =lazy(()=>import("./components/Section3")) 
+const Section1 =lazy(()=>import("./components/Section1"))
 // import Test from "./assets/test/Repeat Grid 3.svg";
 // import './assets/font/static/Inter-Regular.ttf'
+
+
 
 
 function App() {
 
   useEffect(() => {
-    Aos.init({ duration: 500 });
+    Aos.init({ duration: 400 });
   }, []);
 
 
 
   return (
-    <React.Fragment>
+    <Suspense fallback={<div></div>}>
       <Navbar />
       <GetStarted />
       {/* <img */}
@@ -41,7 +49,7 @@ function App() {
       <Badges />
       <JoinUs />
       <Footer />
-    </React.Fragment>
+    </Suspense>
   );
 }
 

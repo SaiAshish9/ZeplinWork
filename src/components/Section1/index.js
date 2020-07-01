@@ -6,19 +6,18 @@ import PinkGrid from "../../assets/svgs/pinkGrid";
 // import BusinessCard from "./businessCard";
 // import NotificationCard from "./notifications";
 // import ProfileCard from "./profile";
-import VerifyStatus from '../../test/verifyStatus.png'
-import Card from '../../test/card.png'
-import BusinessDev from '../../test/businessDev.png'
-import Notifications from '../../test/notifications.png'
-import ProfileScore from '../../test/profileScore.png'
-
+import VerifyStatus from "../../test/verifyStatus.png";
+import Card from "../../test/card.png";
+import BusinessDev from "../../test/businessDev.png";
+import Notifications from "../../test/notifications.png";
+import ProfileScore from "../../test/profileScore.png";
 
 const Section1 = () => (
   <Row
     align="center"
     style={{
       height: 408,
-      margin: "25vh auto 80vh",
+      margin: "32vh auto 80vh",
       width: 922,
     }}
   >
@@ -77,7 +76,7 @@ const Section1 = () => (
       style={{
         position: "absolute",
         left: "14%",
-        top: "137%",
+        top: `${window.screen.height + 200}px`,
         zIndex: 4,
       }}
       alt="business"
@@ -91,7 +90,7 @@ const Section1 = () => (
       style={{
         position: "absolute",
         right: "40%",
-        top: "134%",
+        top: `${window.screen.height + 180}px`,
         zIndex: 4,
       }}
       alt="profile"
@@ -99,12 +98,25 @@ const Section1 = () => (
 
     {/* <NotificationCard /> */}
 
+    <div
+      style={{
+        width: 235,
+        height: 235,
+        opacity: 0.1,
+        backgroundColor: "#ea907a",
+        borderRadius: "50%",
+        position: "relative",
+        left: "55%",
+        // bottom: "10%",
+      }}
+    ></div>
+
     <img
       src={Notifications}
       style={{
         position: "absolute",
+        top: `${window.screen.height + 200}px`,
         right: "10%",
-        top: "137%",
         zIndex: 4,
       }}
       alt="notifications"
