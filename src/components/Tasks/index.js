@@ -33,9 +33,12 @@ const options = [
   return (
     <Row style={{ margin: "10vh 0" }}>
       <Col span={10}>
-        <JobsComponent />
+        <div data-aos="fade">
+          <JobsComponent />
+        </div>
         <Row
-          className="animate__animated animate__slideInLeft"
+          data-aos="slide-right"
+          // className="animate__animated animate__slideInLeft"
           style={{ position: "relative", bottom: "20rem", left: "4rem" }}
         >
           <ArrowBow />
@@ -103,10 +106,7 @@ const options = [
                   }}
                 >
                   {/* {i.icon} */}
-                  <img
-                  alt={k}
-                  src={i.icon}
-                  />
+                  <img alt={k} src={i.icon} />
                 </Typography>
                 <Typography
                   style={{

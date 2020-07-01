@@ -12,17 +12,18 @@ import BusinessDev from '../../test/businessDev.png'
 import Notifications from '../../test/notifications.png'
 import ProfileScore from '../../test/profileScore.png'
 
+
 const Section1 = () => (
   <Row
     align="center"
     style={{
       height: 408,
-      margin: "20vh auto 80vh",
+      margin: "30vh auto 80vh",
       width: 922,
     }}
   >
     <div
-      className="animate__animated animate__fadeIn"
+      className="animate__animated animate__zoomIn"
       style={{
         position: "absolute",
         left: 220,
@@ -50,12 +51,13 @@ const Section1 = () => (
       <img
         src={VerifyStatus}
         alt="Verify Status"
-        className="animate__animated animate__slideInLeft"
+        data-aos="slide-right"
+        // className="animate__animated animate__slideInLeft"
       />
       {/* <Verify /> */}
     </Col>
     <div
-      className="animate__animated animate__slideInRight"
+      // className="animate__animated animate__slideInRight"
       style={{
         position: "absolute",
         right: "20%",
@@ -63,7 +65,7 @@ const Section1 = () => (
         //    bottom: "-2%"
       }}
     >
-      <img src={Card} alt="card" />
+      <img data-aos="slide-left" src={Card} alt="card" />
       {/* <Wallet /> */}
     </div>
 
@@ -71,14 +73,15 @@ const Section1 = () => (
 
     <img
       src={BusinessDev}
+      data-aos="slide-right"
       style={{
         position: "absolute",
         left: "14%",
-        top: "140%",
+        top: "145%",
         zIndex: 4,
       }}
       alt="business"
-      className="animate__animated animate__slideInLeft"
+      // className="animate__animated animate__slideInLeft"
     />
 
     {/* <ProfileCard /> */}
@@ -105,7 +108,8 @@ const Section1 = () => (
         zIndex: 4,
       }}
       alt="notifications"
-      className="animate__animated animate__slideInRight"
+      data-aos="slide-left"
+      // className="animate__animated animate__slideInRight"
     />
   </Row>
 );

@@ -9,17 +9,21 @@ import BlueBg from "../../test/blue.svg"
 const images = [Option1, Option2, Option3];
 
 const ActiveImg1 = () => (
-  <img 
-  style={{position:'relative',zIndex:5}}
-  alt="1"
-  className="animate__animated animate__zoomIn" src={images[0]} />
+  <img
+    style={{ position: "relative", zIndex: 5 }}
+    alt="1"
+    data-aos="zoom-in"
+    // className="animate__animated animate__zoomIn"
+    src={images[0]}
+  />
 );
 
 const ActiveImg2 = () => (
   <img
     style={{ position: "relative", zIndex: 5 }}
     alt="2"
-    className="animate__animated animate__zoomIn"
+    data-aos="zoom-in"
+    // className="animate__animated animate__zoomIn"
     src={images[1]}
   />
 );
@@ -28,7 +32,8 @@ const ActiveImg3 = () => (
   <img
     alt="3"
     style={{ position: "relative", zIndex: 5, bottom: "3rem" }}
-    className="animate__animated animate__zoomIn"
+    // className="animate__animated animate__zoomIn"
+    data-aos="zoom-in"
     src={images[2]}
   />
 );
@@ -36,6 +41,7 @@ const ActiveImg3 = () => (
 const InActiveImg1 = () => (
   <img
     alt="i1"
+    // data-aos="zoom-in"
     // className="animate__animated animate__backInRight"
     style={{
       opacity: 0.7,
@@ -50,6 +56,7 @@ const InActiveImg1 = () => (
 const InActiveImg2 = ({ selected }) => (
   <img
     alt="i2"
+    // data-aos="zoom-in"
     // className="animate__animated animate__backInRight"
     style={{
       opacity: 0.7,
@@ -64,6 +71,7 @@ const InActiveImg2 = ({ selected }) => (
 const InActiveImg3 = () => (
   <img
     alt="i3"
+    // data-aos="zoom-in"
     // className="animate__animated animate__backInRight"
     style={{
       opacity: 0.7,
@@ -94,6 +102,9 @@ const Section3 = () => {
       color: "#4d52d1",
     },
   ];
+
+
+
 
   return (
     <Row style={{ marginBottom: "17rem" }}>

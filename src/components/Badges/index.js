@@ -47,7 +47,9 @@ const Badges = () => (
           alignItems: "center",
         }}
       >
-        <img src={i.icon} alt={k} />
+        <img 
+        data-aos="zoom-in"
+        src={i.icon} alt={k} />
 
         <p
           style={{

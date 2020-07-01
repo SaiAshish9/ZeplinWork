@@ -1,6 +1,7 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./App.css";
 import "antd/dist/antd.css";
+import "aos/dist/aos.css"
 import 'animate.css/animate.min.css';
 import Navbar from "./components/Navbar";
 import GetStarted from "./components/GetStarted";
@@ -12,8 +13,16 @@ import Experience from "./components/Experience";
 import Tasks from "./components/Tasks";
 import Section3 from "./components/Section3";
 import Section1 from "./components/Section1";
+import Aos from "aos";
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+
+
   return (
     <React.Fragment>
       <Navbar />

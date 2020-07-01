@@ -13,6 +13,8 @@ const GetStarted = () => {
           <Row align="center" justify="center">
             <Typography
               className="animate__animated animate__pulse"
+              // className="animate__animated animate__bounceInDown"
+              // className="animate__animated animate__heartBeat"
               style={{
                 color: "#333e49",
                 fontSize: 55,
@@ -44,6 +46,7 @@ const GetStarted = () => {
           <Row align="center" justify="center" style={{ marginTop: 28 }}>
             <Button
               className="animate__animated animate__zoomIn"
+              // className="animate__animated animate__rubberBand"
               onMouseEnter={() => {
                 slideLeft(true);
               }}

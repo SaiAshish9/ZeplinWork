@@ -7,7 +7,11 @@ import ArrowLoop from "../../assets/svgs/arrowLoop";
 import AndroidMobilePic from '../../assets/images/AndroidMobile.png'
 import LoginMobilePic from '../../assets/images/LoginMobile.png'
 
-const JoinUs = () => (
+const JoinUs = () => {
+
+
+
+  return (
   <div
     style={{
       width: "100vw",
@@ -130,13 +134,17 @@ const JoinUs = () => (
         }}
         >
           <img 
-          className="animate__animated animate__fadeIn animate__delay-2s"
+          data-aos="fade"
+          data-aos-delay="1700"
+          data-aos-duration="1200"
+          data-ios-easing="ease-in-out"
+          // className="animate__animated animate__fadeIn animate__delay-2s"
           src={AndroidMobilePic}
           alt="android"  />
         </div>
       </div>
     </div>
   </div>
-);
+)}
 
 export default JoinUs;
