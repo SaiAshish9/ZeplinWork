@@ -4,6 +4,8 @@ import Option1 from "../../test/selection.png";
 import Option2 from "../../test/submission.png";
 import Option3 from "../../test/payment.png";
 import BlueGrid from "../../assets/svgs/blueGrid";
+import BlueBg from "../../test/blue.svg"
+
 const images = [Option1, Option2, Option3];
 
 const ActiveImg1 = () => (
@@ -36,7 +38,7 @@ const InActiveImg1 = () => (
     alt="i1"
     // className="animate__animated animate__backInRight"
     style={{
-      opacity: 0.5,
+      opacity: 0.7,
       width: 248,
       height: 225,
       objectFit: "contain",
@@ -50,7 +52,7 @@ const InActiveImg2 = ({ selected }) => (
     alt="i2"
     // className="animate__animated animate__backInRight"
     style={{
-      opacity: 0.5,
+      opacity: 0.7,
       position: "relative",
       bottom: selected === 0 && "3rem",
       width: "70%",
@@ -64,7 +66,7 @@ const InActiveImg3 = () => (
     alt="i3"
     // className="animate__animated animate__backInRight"
     style={{
-      opacity: 0.65,
+      opacity: 0.7,
       width: 223.2,
       height: 221,
       objectFit: "contain",
@@ -226,7 +228,17 @@ const Section3 = () => {
       <Col span={2} style={{ position: "relative", bottom: "5rem" }}>
         <BlueGrid />
       </Col>
-      <Col span={10}>
+      <Col span={10}
+      >
+        <img
+        alt="bg"
+        src={BlueBg}
+        style={{
+          position: "absolute",
+          right:0,
+          top:'-5rem'
+        }}
+        />
         <div style={{ position: "absolute", right: "17rem", top: "4rem" }}>
           {/* {unselected[0] === 0 ? (
             <InActiveImg1 />
