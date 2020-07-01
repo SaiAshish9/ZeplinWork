@@ -21,7 +21,10 @@ const GetStarted = () => {
                 width: 756,
                 height: 66,
                 fontWeight: 600,
-                lineHeight: '65ps',
+                fontStretch: 'normal',
+                fontStyle: 'normal',
+                letterSpacing: 'normal',
+                lineHeight: 1.18,
                 opacity: 0.9,
               }}
             >
