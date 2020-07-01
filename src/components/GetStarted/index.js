@@ -20,32 +20,37 @@ const GetStarted = () => {
                 fontSize: 55,
                 width: 756,
                 height: 66,
-                fontWeight: 700,
-                fontStretch: 'normal',
-                fontStyle: 'normal',
-                letterSpacing: 'normal',
-                lineHeight: '65px',
-                opacity: 0.9,
+                fontFamily: "Inter-SemiBold",
+                // fontWeight: 600,
+                fontStretch: "normal",
+                fontStyle: "normal",
+                letterSpacing: "normal",
+                lineHeight: "65px",
               }}
             >
               You Got Skills. We Got Work.
             </Typography>
           </Row>
-          <Row align="center" justify="center">
-            <Typography
+          <div align="center" justify="center">
+            <p
               className="animate__animated animate__zoomInRight"
               style={{
                 color: "#333e49",
                 fontSize: 32,
-                fontWeight: 500,
-                lineHeight: '39px',
+                width:990,
+                height:39,
+                fontFamily:"Inter-Medium",
+                // fontWeight: 500,
+                lineHeight: "39px",
+                fontStretch: "normal",
+                fontStyle: "normal",
+                letterSpacing: "normal",
                 marginTop: 24,
-                opacity: 0.9,
               }}
             >
               Earn money and experience while working on your own schedule
-            </Typography>
-          </Row>
+            </p>
+          </div>
           <Row align="center" justify="center" style={{ marginTop: 28 }}>
             <Button
               className="animate__animated animate__zoomIn"
@@ -63,7 +68,7 @@ const GetStarted = () => {
                 width: 263,
                 // padding: "0 4rem",
                 borderRadius: 10,
-                border: "solid 1px #ea907a",
+                border: "solid 2px #ea907a",
                 color: "#ea907a",
                 fontSize: 22,
                 display: "flex",
@@ -73,10 +78,12 @@ const GetStarted = () => {
             >
               <span
                 className={slide && "animate__animated animate__fadeIn"}
-                style={{
-                  // transform: slide && "translateX(-10px)",
-                  // transition: slide && "1s backwards",
-                }}
+                style={
+                  {
+                    // transform: slide && "translateX(-10px)",
+                    // transition: slide && "1s backwards",
+                  }
+                }
               >
                 Get Started
               </span>

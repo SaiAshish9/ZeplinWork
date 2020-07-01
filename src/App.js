@@ -14,6 +14,7 @@ import Section3 from "./components/Section3";
 import Section1 from "./components/Section1";
 import Aos from "aos";
 // import Test from "./assets/test/Repeat Grid 3.svg";
+// import './assets/font/static/Inter-Regular.ttf'
 
 
 function App() {
