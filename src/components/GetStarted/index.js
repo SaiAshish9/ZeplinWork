@@ -20,11 +20,11 @@ const GetStarted = () => {
                 fontSize: 55,
                 width: 756,
                 height: 66,
-                fontWeight: 600,
+                fontWeight: 700,
                 fontStretch: 'normal',
                 fontStyle: 'normal',
                 letterSpacing: 'normal',
-                lineHeight: 1.18,
+                lineHeight: '65px',
                 opacity: 0.9,
               }}
             >
@@ -38,7 +38,7 @@ const GetStarted = () => {
                 color: "#333e49",
                 fontSize: 32,
                 fontWeight: 500,
-                lineHeight: '32ps',
+                lineHeight: '39px',
                 marginTop: 24,
                 opacity: 0.9,
               }}
