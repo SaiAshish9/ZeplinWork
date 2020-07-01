@@ -33,7 +33,7 @@ const options = [
   return (
     <Row style={{ margin: "10vh 0" }}>
       <Col span={10}>
-        <div data-aos="fade">
+        <div >
           <JobsComponent />
         </div>
         <Row

@@ -135,8 +135,8 @@ const JoinUs = () => {
         >
           <img 
           data-aos="fade"
-          data-aos-delay="1700"
-          data-aos-duration="1200"
+          data-aos-delay="100"
+          // data-aos-duration="1200"
           data-ios-easing="ease-in-out"
           // className="animate__animated animate__fadeIn animate__delay-2s"
           src={AndroidMobilePic}

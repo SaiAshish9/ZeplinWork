@@ -21,7 +21,7 @@ const GetStarted = () => {
                 width: 756,
                 height: 66,
                 fontWeight: 600,
-                lineHeight: 1.18,
+                lineHeight: '65ps',
                 opacity: 0.9,
               }}
             >
@@ -34,8 +34,8 @@ const GetStarted = () => {
               style={{
                 color: "#333e49",
                 fontSize: 32,
-                fontWeight: 600,
-                lineHeight: 1,
+                fontWeight: 500,
+                lineHeight: '32ps',
                 marginTop: 24,
                 opacity: 0.9,
               }}
@@ -71,8 +71,8 @@ const GetStarted = () => {
               <span
                 className={slide && "animate__animated animate__fadeIn"}
                 style={{
-                  transform: slide && "translateX(-10px)",
-                  transition: slide && "1s backwards",
+                  // transform: slide && "translateX(-10px)",
+                  // transition: slide && "1s backwards",
                 }}
               >
                 Get Started

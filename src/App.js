@@ -8,17 +8,18 @@ import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import JoinUs from "./components/JoinUs";
 import Badges from "./components/Badges";
-// import Test from "./assets/svgs/test";
 import Experience from "./components/Experience";
 import Tasks from "./components/Tasks";
 import Section3 from "./components/Section3";
 import Section1 from "./components/Section1";
 import Aos from "aos";
+// import Test from "./assets/test/Repeat Grid 3.svg";
+
 
 function App() {
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 500 });
   }, []);
 
 
@@ -27,6 +28,10 @@ function App() {
     <React.Fragment>
       <Navbar />
       <GetStarted />
+      {/* <img */}
+      {/* src={Test} */}
+      {/* alt="test" */}
+      {/* /> */}
       {/* <Test/> */}
       <Section1/>
       <Tasks />

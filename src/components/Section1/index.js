@@ -18,7 +18,7 @@ const Section1 = () => (
     align="center"
     style={{
       height: 408,
-      margin: "30vh auto 80vh",
+      margin: "25vh auto 80vh",
       width: 922,
     }}
   >
@@ -77,7 +77,7 @@ const Section1 = () => (
       style={{
         position: "absolute",
         left: "14%",
-        top: "145%",
+        top: "137%",
         zIndex: 4,
       }}
       alt="business"
@@ -91,7 +91,7 @@ const Section1 = () => (
       style={{
         position: "absolute",
         right: "40%",
-        top: "138%",
+        top: "134%",
         zIndex: 4,
       }}
       alt="profile"
@@ -104,7 +104,7 @@ const Section1 = () => (
       style={{
         position: "absolute",
         right: "10%",
-        top: "140%",
+        top: "137%",
         zIndex: 4,
       }}
       alt="notifications"
