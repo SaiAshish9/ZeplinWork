@@ -132,7 +132,8 @@ const Section3 = () => {
                 marginLeft: 10,
               }}
             >
-              Working has never this easy and fun.
+              Working has <br />
+              never been this easier and fun.
             </span>
           </Typography>
         </div>
@@ -230,8 +231,11 @@ const Section3 = () => {
                 opacity: 0.9,
               }}
             >
-              Complete tasks before the deadline and submit proof of work
-              completed on the mobile app or website.
+              {selected === 0
+                ? "Apply to jobs that match your skills and interests at a single click on the mobile app or website."
+                : selected === 1
+                ? "Complete tasks before the deadline and submit proof of work completed on the mobile app or website."
+                : "Get paid directly into Pracify wallet. Transfer your earnings into your Paytm or Bank account."}
             </Typography>
           </Col>
         </div>
@@ -239,16 +243,15 @@ const Section3 = () => {
       <Col span={2} style={{ position: "relative", bottom: "5rem" }}>
         <BlueGrid />
       </Col>
-      <Col span={10}
-      >
+      <Col span={10}>
         <img
-        alt="bg"
-        src={BlueBg}
-        style={{
-          position: "absolute",
-          right:0,
-          top:'-5rem'
-        }}
+          alt="bg"
+          src={BlueBg}
+          style={{
+            position: "absolute",
+            right: 0,
+            top: "-5rem",
+          }}
         />
         <div style={{ position: "absolute", right: "17rem", top: "4rem" }}>
           {/* {unselected[0] === 0 ? (
@@ -275,7 +278,11 @@ const Section3 = () => {
           ) : (
             <ActiveImg3 />
           )} */}
-          {selected === 1 ? <ActiveImg2 /> : <InActiveImg2 selected={selected} />}
+          {selected === 1 ? (
+            <ActiveImg2 />
+          ) : (
+            <InActiveImg2 selected={selected} />
+          )}
         </div>
         <div style={{ position: "absolute", right: "16rem", top: "20rem" }}>
           {/* {unselected[1] === 0 ? (
