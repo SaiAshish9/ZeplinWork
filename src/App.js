@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import "antd/dist/antd.css";
+import 'animate.css/animate.min.css';
 import Navbar from "./components/Navbar";
 import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";

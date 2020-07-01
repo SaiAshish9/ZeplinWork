@@ -6,6 +6,7 @@ import CalendarImg from "../../assets/svgs/calendar.svg"
 
 const BusinessCard = () => (
   <div
+    className="animate__animated animate__slideInLeft"
     style={{
       //   height: "14.43rem",
       width: "15.75rem",
@@ -29,7 +30,8 @@ const BusinessCard = () => (
     />
     <Typography
       style={{
-        fontSize: "1.2rem",
+        fontSize: 18,
+        lineHeight: 1.17,
         fontWeight: 600,
         color: "#333e49",
       }}
@@ -38,10 +40,12 @@ const BusinessCard = () => (
     </Typography>
     <Typography
       style={{
-        fontSize: "1rem",
-        fontWeight: 500,
+        fontSize: 16,
+        opacity:0.8,
+        marginTop:5,
+        lineHeight: 1.17,
+        fontWeight: 600,
         color: "#333e49",
-        opacity: 0.8,
       }}
     >
       Pracify
@@ -83,7 +87,12 @@ const BusinessCard = () => (
         borderRadius: 20,
       }}
     />
-    <Typography style={{ fontWeight: 500 }}>
+    <Typography style={{ 
+      fontWeight: 600,
+      fontSize:12,
+      marginLeft:10,
+      lineHeight:1.14
+      }}>
       Apply Before : 10th Nov 2020
     </Typography>
   </div>

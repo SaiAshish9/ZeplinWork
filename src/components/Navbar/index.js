@@ -9,23 +9,34 @@ const Navbar = () => {
         <Row
           align="middle"
           justify="space-between"
-          style={{ padding: "1.5rem" }}
+          style={{
+             padding: "20px 27px",
+             position:"fixed",
+             width:'100vw',
+             top:0,
+             zIndex:6,
+             backdropFilter:"blur(19px)",
+        
+        }}
         >
-          <Col span={4}>
+          <Col>
             <img
               src={Logo}
               style={{ height: "73.5px", width: "214px" }}
               alt="practify"
             />
           </Col>
-          <Col span={12}>
+          <Col>
             <Row align="center" justify="space-between">
               <Typography
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  fontSize: "1.1rem",
+                  fontSize: 18,
+                  fontWeight: "normal",
+                  lineHeight: 1.22,
                   cursor: "pointer",
+                  marginRight: "30px",
                 }}
               >
                 Gigs
@@ -34,8 +45,10 @@ const Navbar = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  fontSize: "1.1rem",
+                  fontSize: 18,
+                  lineHeight: 1.22,
                   cursor: "pointer",
+                  marginRight: "30px",
                 }}
               >
                 Internships
@@ -43,11 +56,13 @@ const Navbar = () => {
               <Button
                 type="text"
                 style={{
-                  height: "3rem",
+                  height: 49,
+                  width: 122,
                   padding: "0 2rem",
-                  borderRadius: 7,
+                  borderRadius: 6,
                   border: "solid 1px #333e49",
                   fontSize: "1.1rem",
+                  marginRight: "30px",
                 }}
               >
                 Login
@@ -55,12 +70,16 @@ const Navbar = () => {
               <Button
                 type="text"
                 style={{
-                  height: "3rem",
+                  height: 49,
+                  width: 200,
                   borderRadius: 7,
-                  fontSize: "1.1rem",
+                  fontSize: 18,
+                  lineHeight: 1.22,
                   padding: "0 2rem",
+                  fontFamily: "Inter",
                   backgroundColor: "#ea907a",
                   color: "#fff",
+                  marginRight: "30px",
                 }}
               >
                 Download App{" "}
@@ -68,12 +87,14 @@ const Navbar = () => {
               <Button
                 type="text"
                 style={{
-                  height: "3rem",
+                  height: 49,
+                  width: 200,
                   borderRadius: 7,
-                  fontSize: "1.1rem",
+                  fontSize: 18,
                   padding: "0 2rem",
                   backgroundColor: "#7a81ea",
                   color: "#fff",
+                  marginRight: "30px",
                 }}
               >
                 I'm a Company

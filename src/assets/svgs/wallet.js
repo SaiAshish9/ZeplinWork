@@ -3,8 +3,8 @@ import React from "react";
 const Wallet = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="460"
-    height="275.917"
+    width="360"
+    height="270"
     viewBox="0 0 460 275.917"
   >
     <defs>

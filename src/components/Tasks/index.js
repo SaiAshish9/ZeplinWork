@@ -1,135 +1,144 @@
-import React from "react";
+import React,{useState} from "react";
 import { Row, Col, Typography } from "antd";
 import JobsComponent from "../../assets/svgs/jobsComplete";
 import ArrowBow from "../../assets/svgs/arrowBow";
-import WorkRm from "../../assets/svgs/workRm";
+// import WorkRm from "../../assets/svgs/workRm";
+import WorkRemotely from '../../test/workRemotely.svg' 
+import Jobs from "../../test/jobs.svg"
+import Payments from "../../test/payments.svg"
 
-const Tasks = () => (
-  <Row style={{ marginBottom: "10vh" }}>
-    <Col span={10}>
-      <JobsComponent />
-      <Row style={{ position: "relative", bottom: "20rem", left: "4rem" }}>
-        <ArrowBow />
-      </Row>
-    </Col>
-    <Col style={{ paddingLeft: "5rem", paddingTop: "7rem", width: "50%" }}>
-      <Typography style={{ fontSize: "1.8rem", fontWeight: 600 }}>
-        With Pracify you can work from wherever you want,whenever you want.
-      </Typography>
-      <Typography
-        style={{ margin: "10px 0", fontSize: "1.5rem", fontWeight: 500 }}
+const Tasks = () => {
+
+  const [selected,setSelected]=useState(0)
+
+const options = [
+  {
+    title: "Jobs for Everyone",
+    description: "Find and apply to jobs that match your skills & interest.",
+    icon: Jobs,
+  },
+  {
+    title: "Work Remotely",
+    description: "Work on the go using your smartphone or computer according to your own schedule. ",
+    icon: WorkRemotely,
+  },
+  {
+    title: "Fast & Secure Payments",
+    description: "Get paid directly into your Pracify wallet after completing the work successfully.",
+    icon: Payments,
+  },
+];
+
+
+  return (
+    <Row style={{ margin: "10vh 0" }}>
+      <Col span={10}>
+        <JobsComponent />
+        <Row
+          className="animate__animated animate__slideInLeft"
+          style={{ position: "relative", bottom: "20rem", left: "4rem" }}
+        >
+          <ArrowBow />
+        </Row>
+      </Col>
+      <Col
+        style={{
+          paddingLeft: "5rem",
+          paddingTop: "7rem",
+          width: "40%",
+          marginLeft: "10%",
+        }}
       >
-        Get paid for completing tasks online
-      </Typography>
-
-      <Col style={{ marginTop: "2rem" }}>
-        <Col
+        <Typography
           style={{
-            padding: "2rem 1rem",
-            borderTop: "1px solid #ea907a",
+            fontSize: 26,
+            fontWeight: "bolder",
+            color: "#333e49",
+            fontFamily: "'Inter',sans-serif",
+            lineHeight: 1.38,
+            opacity: 0.9,
+            textAlign: "start",
           }}
         >
-          <Row style={{ display: "flex", alignItems: "center" }}>
-            <Typography
-              style={{
-                background: "#fdf4f1",
-                height: "2.5rem",
-                width: "2.5rem",
-                borderRadius: "50%",
-                marginRight: 20,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            ></Typography>
-            <Typography
-              style={{
-                fontWeight: 600,
-                color: "#ea907a",
-                fontSize: "1.2rem",
-              }}
-            >
-              Jobs for Everyone
-            </Typography>
-          </Row>
-          <Typography
-            style={{
-              color: "#333e49",
-              fontWeight: 700,
-              opacity: 0.8,
-              marginTop: 10,
-              marginLeft:"9.5%"
-            }}
-          >
-            Find and apply to jobs that match your skills & interest.
-          </Typography>
-        </Col>
-
-        <Col
+          With Pracify you can work from
+          <br />
+          wherever you want,whenever you want.
+        </Typography>
+        <Typography
           style={{
-            padding: "2rem 1rem",
-            borderTop: "1px solid #ea907a",
+            margin: "10px 0",
+            fontSize: 20,
+            fontWeight: 600,
+            opacity: 0.9,
           }}
         >
-          <Row style={{ display: "flex", alignItems: "center" }}>
-            <Typography
-              style={{
-                background: "#fdf4f1",
-                height: "2.5rem",
-                width: "2.5rem",
-                borderRadius: "50%",
-                marginRight: 20,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <WorkRm />
-            </Typography>
-            <Typography
-              style={{
-                fontWeight: 600,
-                color: "#ea907a",
-                fontSize: "1.2rem",
-              }}
-            >
-              Work Remotely
-            </Typography>{" "}
-          </Row>
-        </Col>
+          Get paid for completing tasks online
+        </Typography>
 
-        <Col
-          style={{
-            padding: "2rem 1rem",
-            borderTop: "1px solid #ea907a",
-            borderBottom: "1px solid #ea907a",
-          }}
-        >
-          <Row style={{ display: "flex", alignItems: "center" }}>
-            <Typography
-              style={{
-                backgroundColor: "#ea907a",
-                height: "2.5rem",
-                width: "2.5rem",
-                borderRadius: "50%",
-                opacity: 0.1,
-                marginRight: 20,
+        <Col style={{ marginTop: "2rem" }}>
+          {options.map((i, k) => (
+            <Col
+              key={k}
+              onClick={() => {
+                setSelected(k);
               }}
-            ></Typography>
-            <Typography
               style={{
-                fontWeight: 600,
-                color: "#ea907a",
-                fontSize: "1.2rem",
+                padding: "1.5rem 1rem",
+                borderTop: "1px solid #ea907a",
+                borderBottom: k === 2 && "1px solid #ea907a",
+                cursor: "pointer",
               }}
             >
-              Fast & Secure Payments
-            </Typography>
-          </Row>
+              <Row style={{ display: "flex", alignItems: "center" }}>
+                <Typography
+                  style={{
+                    background: "#fdf4f1",
+                    height: "2.5rem",
+                    width: "2.5rem",
+                    borderRadius: "50%",
+                    marginRight: 20,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {/* {i.icon} */}
+                  <img
+                  alt={k}
+                  src={i.icon}
+                  />
+                </Typography>
+                <Typography
+                  style={{
+                    fontWeight: 600,
+                    color: "#ea907a",
+                    lineHeight: 1.64,
+                    fontSize: 22,
+                  }}
+                >
+                  {i.title}
+                </Typography>
+              </Row>
+              {selected === k && (
+                <Typography
+                  className="animate__animated animate__fadeIn"
+                  style={{
+                    color: "#9ba0a6",
+                    fontWeight: 600,
+                    opacity: 0.7,
+                    fontSize: 18,
+                    marginTop: 5,
+                    marginLeft: "12%",
+                  }}
+                >
+                  {i.description}
+                </Typography>
+              )}
+            </Col>
+          ))}
         </Col>
       </Col>
-    </Col>
-  </Row>
-);
+    </Row>
+  );}
 
 export default Tasks;

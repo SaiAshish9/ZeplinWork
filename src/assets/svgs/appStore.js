@@ -6,8 +6,8 @@ const AppStore = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         id="prefix__Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917"
-        width="122.108"
-        height="40.817"
+        width="143.108"
+        height="49.817"
         viewBox="0 0 122.108 40.817"
       >
         <g id="prefix__Group_402" data-name="Group 402">

@@ -1,80 +1,108 @@
 import React from "react";
-import { Row, Col, Typography } from "antd";
+import { Row, Typography } from "antd";
 import Grid5 from "../../assets/svgs/grid5";
 
 const Experience = () => (
   <Row
     style={{
       width: "100vw",
-      paddingBottom: "10vh",
+      padding: "122px 150px",
       transform: "skewY(-3deg)",
       background: "linear-gradient(136deg, #7a81ea 33%, #545bcd 100%)",
     }}
   >
     <Row
       style={{
-        margin: "5rem",
+        // margin: "5rem",
         transform: "skewY(3deg)",
       }}
     >
-      <Row style={{ padding: "2rem" }}>
-        <Typography
-          style={{ fontSize: "3rem", fontWeight: 500, color: "#fff" }}
-        >
-          Working with Pracify helps you earn money,gain experience,and grow
-          professionally.
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          // alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Typography style={{ fontSize: 48, fontWeight: 500, color: "#fff" }}>
+          Working with Pracify helps you earn money,
         </Typography>
-      </Row>
-      <Row style={{ padding: "1.5rem", width: "100%" }}>
-        <Col style={{ marginRight: "30%" }}>
+        <Typography style={{ fontSize: 48, fontWeight: 500, color: "#fff" }}>
+          gain experience,and grow professionally.
+        </Typography>
+      </div>
+      <Row style={{ padding: "1.5rem 0", width: "100%" }}>
+        <div style={{ marginRight: "30%" }}>
           <Typography
             style={{ fontSize: "2.5rem", fontWeight: 500, color: "#fff" }}
           >
             From
           </Typography>
-          {[
-            "Finding work",
-            "Driven by necessity",
-            "Unpaid Internships",
-            "Payment hassles",
-          ].map((i, k) => (
-            <Typography
-              style={{
-                color: "#fff",
-                margin: "10px 0",
-                fontSIze: "1.5rem",
-              }}
-              key={k}
-            >
-              {i}
-            </Typography>
-          ))}
-        </Col>
-        <Col>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: 150,
+              fontSize: 20,
+            }}
+          >
+            {[
+              "Finding work",
+              "Driven by necessity",
+              "Unpaid Internships",
+              "Payment hassles",
+            ].map((i, k) => (
+              <p
+                style={{
+                  color: "#fff",
+                  // margin: "10px 0",
+                  fontSIze: 48,
+                  lineHeight: 1.25,
+                }}
+                key={k}
+              >
+                {i}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div>
           <Typography
             style={{ fontSize: "2.5rem", fontWeight: 500, color: "#fff" }}
           >
             To
           </Typography>{" "}
-          {[
-            "Choosing work",
-            "Driven by passion",
-            "Paid Gigs",
-            "Secure payments",
-          ].map((i, k) => (
-            <Typography
-              style={{
-                color: "#fff",
-                margin: "10px 0",
-                fontSIze: "2rem",
-                lineHeight:1.25
-              }}
-              key={k}
-            >
-              {i}
-            </Typography>
-          ))}
-        </Col>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: 150,
+              fontSize: 20,
+            }}
+          >
+            {[
+              "Choosing work",
+              "Driven by passion",
+              "Paid Gigs",
+              "Secure payments",
+            ].map((i, k) => (
+              <p
+                style={{
+                  color: "#fff",
+                  // margin: "10px 0",
+                  fontSIze: 48,
+                  lineHeight: 1.25,
+                }}
+                key={k}
+              >
+                {i}
+              </p>
+            ))}
+          </div>
+        </div>
       </Row>
     </Row>
 
@@ -83,17 +111,17 @@ const Experience = () => (
         margin: 20,
         transform: "skewY(3deg)",
         position: "absolute",
-        right: "-6vw",
+        right: 0,
         bottom: "25vh",
       }}
     >
       <Row
         style={{
-          height: "8rem",
-          width: "8rem",
+          height: 153,
+          width: 153,
           borderRadius: "50%",
           background: "#fff",
-          opacity: 0.07,
+          opacity: 0.1,
           position: "relative",
           left: "6rem",
           top: "10rem",
@@ -101,15 +129,16 @@ const Experience = () => (
       ></Row>
       <Row
         style={{
-          height: "8rem",
-          width: "8rem",
+          height: 153,
+          width: 153,
           background: "#fff",
-          opacity: 0.07,
+          opacity: 0.1,
           position: "relative",
           left: "3rem",
           top: "6rem",
         }}
       ></Row>
+
       <Grid5 />
     </Row>
   </Row>

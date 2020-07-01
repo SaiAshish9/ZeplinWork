@@ -56,11 +56,11 @@ const Footer = () => {
               color: "#333e49",
               fontWeight: 600,
               marginLeft: "2rem",
-              marginTop:"1rem",
-              marginBottom: "1rem"
+              marginTop: "1rem",
+              marginBottom: "1rem",
             }}
           >
-            Practify helps companies scale using their network of on-demand
+            Pracify helps companies scale using their network of on-demand
             workers comprised of India's college students & young adults.
           </Typography>
           <Row style={{ marginLeft: "1.5rem" }}>
@@ -69,7 +69,7 @@ const Footer = () => {
                 <img
                   src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
                   width="150"
-                  height="60"
+                  height="70"
                   alt="Get it on Google Play"
                   border="0"
                 />
@@ -96,6 +96,7 @@ const Footer = () => {
                     marginBottom: 20,
                     color: "#333e49",
                     fontWeight: 600,
+                    fontSize: 15,
                   }}
                 >
                   {i.title}
@@ -104,7 +105,13 @@ const Footer = () => {
                 {i.options.map((a, b) => (
                   <Typography
                     key={b}
-                    style={{ color: "#959595", fontWeight: 500, lineHeight: 2 }}
+                    style={{
+                      color: "#959595",
+                      fontWeight: 600,
+                      opacity: 0.8,
+                      fontSize: 15,
+                      lineHeight: 2,
+                    }}
                   >
                     {a}
                   </Typography>
@@ -121,19 +128,38 @@ const Footer = () => {
         align="center"
         justify="space-between"
       >
-        <Typography style={{ color: "#333e49", fontSize: "1rem" }}>
-          Made with <Heart/> in India
+        <Typography
+          style={{
+            color: "#333e49",
+            fontSize: 16,
+            fontWeight: 600,
+            opacity: 0.9,
+          }}
+        >
+          Made with <Heart /> in India
         </Typography>
-        <Typography style={{ color: "#333e49", fontSize: "1rem" }}>
+        <Typography
+          style={{
+            color: "#333e49",
+            fontSize: 16,
+            fontWeight: 600,
+            opacity: 0.9,
+          }}
+        >
           Copyright © 2020 Tyche Ventures Private Limited
         </Typography>
-        <Typography style={{
-          width:'15%',
-          display:'flex',alignItems:'center',justifyContent:'space-between'}}>
-          <Instagram/>
-          <Facebook/>
-          <Twitter/>
-          <LinkedIn/>
+        <Typography
+          style={{
+            width: "15%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Instagram />
+          <Facebook />
+          <Twitter />
+          <LinkedIn />
         </Typography>
       </Row>
     </React.Fragment>

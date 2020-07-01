@@ -3,6 +3,8 @@ import {  Typography } from "antd";
 import AccountImg from "../../assets/svgs/account.svg";
 import BriefcaseImg from "../../assets/svgs/briefcase.svg";
 import AwardImg from "../../assets/svgs/award.svg";
+// import ScrollAnimation from "react-animate-on-scroll";
+import {AnimatedOnScroll} from 'react-animated-css-onscroll'
 
 const Notifications = [
   {
@@ -20,65 +22,69 @@ const Notifications = [
 ];
 
 const BusinessCard = () => (
-  <div
-    style={{
-      //   height: "14.43rem",
-      width: "15.75rem",
-      position: "absolute",
-      right: "14%",
-      top: "145%",
-      zIndex: 4,
-      background: "#fff",
-      borderRadius: 28,
-      padding: "1rem",
-      boxShadow: "0 26px 40px 0 rgba(0, 0, 0, 0.08)",
-    }}
-  >
-    <Typography
+
+    <div
+      className="animate__animated animate__slideInRight"
       style={{
-        fontSize: "0.8rem",
-        fontWeight: 600,
-        marginLeft: 10,
-        color: "#333e49",
-        marginBottom: 20,
+        // height:236 ,
+        width: 296,
+        position: "absolute",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        right: "14%",
+        top: "144%",
+        zIndex: 4,
+        background: "#fff",
+        borderRadius: 28,
+        padding: "1rem",
+        boxShadow: "0 26px 40px 0 rgba(0, 0, 0, 0.08)",
       }}
     >
-      Notifications
-    </Typography>
+      <Typography
+        style={{
+          fontSize: "0.8rem",
+          fontWeight: 600,
+          marginLeft: 10,
+          color: "#333e49",
+          marginBottom: 20,
+        }}
+      >
+        Notifications
+      </Typography>
 
-    {Notifications.map((i, k) => (
-      <div key={k}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-            <img
-            src={i.img}
-            alt={k}
-            />
-          <Typography
+      {Notifications.map((i, k) => (
+        <div key={k}>
+          <div
             style={{
-              fontSize: 9,
-              fontWeight: 600,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
             }}
           >
-            {i.text}
-          </Typography>
+            <img src={i.img} alt={k} style={{ width: "18%" }} />
+            <Typography
+              style={{
+                fontSize: 9,
+                fontWeight: 600,
+                textAlign: "start",
+                width: "82%",
+              }}
+            >
+              {i.text}
+            </Typography>
+          </div>
+          <hr
+            style={{
+              width: "100%",
+              opacity: 0.3,
+              background: "rgba(0, 0, 0, 0.08)",
+              borderRadius: 20,
+            }}
+          />
         </div>
-        <hr
-          style={{
-            width: "100%",
-            opacity: 0.3,
-            background: "rgba(0, 0, 0, 0.08)",
-            borderRadius: 20,
-          }}
-        />
-      </div>
-    ))}
-  </div>
+      ))}
+    </div>
 );
 
 export default BusinessCard;

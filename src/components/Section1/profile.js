@@ -60,15 +60,19 @@ const BusinessCard = () => (
         <Typography
           style={{
             color: "#333e49",
-            fontWeight: 500,
-            fontSize: "1.1rem",
+            fontWeight: 600,
+            lineHeight: 1.19,
+            opacity: 0.8,
+            fontSize: 17,
           }}
         >
           Shivam Malhotra
         </Typography>
         <Typography
           style={{
-            fontSize: "0.8rem",
+            fontSize: 12,
+            color: "#333e49",
+            opacity: 0.8,
             display: "flex",
             alignItems: "center",
           }}
@@ -85,9 +89,9 @@ const BusinessCard = () => (
         >
           <Typography
             style={{
-              fontSize: "0.8rem",
+              fontSize: 12,
               color: "#333e49",
-              opacity: 0.9,
+              opacity: 0.8,
               display: "flex",
               alignItems: "center",
               margin: "0 10px",
@@ -98,9 +102,9 @@ const BusinessCard = () => (
           </Typography>
           <Typography
             style={{
-              fontSize: "0.8rem",
+              fontSize: 12,
               color: "#333e49",
-              opacity: 0.9,
+              opacity: 0.8,
               display: "flex",
               alignItems: "center",
               margin: "0 10px",
@@ -112,22 +116,33 @@ const BusinessCard = () => (
         </div>
         <div
           style={{
-            padding: "0.5rem 1.6rem",
+            display: "flex",
+            justifyContent:'center',
+            alignItems:'center',
+            flexDirection:'column',
+            padding: "0.5rem 1rem",
             boxShadow: "0 9px 39px 0 rgba(0, 0, 0, 0.08)",
             borderRadius: 6,
             marginBottom: 10,
+            width:210
           }}
         >
           <Typography
             style={{
               color: " #333e49",
-              fontWeight: 500,
-              fontSize: 13,
+              fontWeight: 600,
+              fontSize: 12,
+              opacity:0.8,
+              lineHeight: 1.23,
+              height:16
             }}
           >
             Gig Profile Score is 70%
           </Typography>
-          <Progress showInfo={false} strokeColor={"#7aea7a"} percent={70} />
+          <Progress showInfo={false} strokeColor={"#7aea7a"} 
+          strokeWidth={15}
+          style={{margin:2}}
+          percent={70} />
         </div>
       </div>
     </div>

@@ -6,8 +6,8 @@ import {Typography,Button} from 'antd'
 const Verify = () => (
   <div
     style={{
-      height: "8.31rem",
-      width: "25.56rem",
+      height: 133,
+      width: 409,
       background: "#f3fefd",
       borderRadius: 23,
       padding: "1rem",
@@ -24,16 +24,24 @@ const Verify = () => (
         style={{
           color: "#333743",
           fontWeight: 600,
-          fontSize: "1.1rem",
+          fontSize: 19,
+          lineHeight:1.16,
+          height:22,
+          width:197
         }}
       >
         Verify Student Status
       </Typography>
       <Typography
         style={{
-          fontSize: "0.8rem",
+          fontSize: 12,
           color: "#525252",
-          fontWeight: 500,
+          fontWeight: 600,
+          width:207,
+          height:30,
+          margin:'5px 0',
+          opacity:0.9,
+          lineHeight:1.25
         }}
       >
         Verify your student status to access exclusive student offers
@@ -43,8 +51,9 @@ const Verify = () => (
         style={{
           padding: 0,
           color: "#52bdb2",
-          fontSize: "0.8rem",
-          fontWeight: "bold",
+          fontSize: 13,
+          lineHeight: 1.23,
+          fontWeight: "bolder",
         }}
       >
         VERIFY STATUS

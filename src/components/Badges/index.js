@@ -1,34 +1,34 @@
 import React from "react";
-import { Row, Col, Typography } from "antd";
-import Certification from '../../assets/svgs/certification'
-import Bars from '../../assets/svgs/bars'
+// import { Row, Col, Typography } from "antd";
+// import Certification from "../../assets/svgs/certification";
+// import Bars from "../../assets/svgs/bars";
 
+import Upskill from "../../test/upskill.png";
+import Explore from "../../test/explore.png";
+import Professionally from "../../test/Professionally.svg";
+import Badge from "../../test/badge.svg";
 
 const data = [
   {
     title: "Upskill Yourself",
-    icon: "",
-    bgColor: "#fee3df",
+    icon: Upskill,
   },
   {
     title: "Explore Careers",
-    bgColor: "#e1ddef",
-    icon:""
+    icon: Explore,
   },
   {
     title: "Gain Experience",
-    bgColor: "#d3e5ff",
-    icon:<Certification/>
+    icon: Badge,
   },
   {
     title: "Grow Professionally",
-    bgColor: "#e0efe4",
-    icon:<Bars/>
+    icon: Professionally,
   },
 ];
 
 const Badges = () => (
-  <Row
+  <div
     style={{
       padding: "10rem 15rem",
       background: "#fff",
@@ -39,30 +39,30 @@ const Badges = () => (
     }}
   >
     {data.map((i, k) => (
-      <Col key={k}>
-        <Row
+      <div
+        key={k}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <img src={i.icon} alt={k} />
+
+        <p
           style={{
-            height: "7.5rem",
-            width: "7rem",
-            borderRadius: 34,
-            background: i.bgColor,
-            marginBottom:20,
-            display:'flex',
-            alignItems:'center',
-            justifyContent:'center'
+            color: " #333e49",
+            fontSIze: 20,
+            fontWeight:'bold',
+            lineHeight: 1.1,
+            marginTop: '2rem',
           }}
         >
-            {i.icon}
-        </Row>
-
-        <Typography
-          style={{ color: " #333e49", fontSIze: 40, lineHeight: 1.1 }}
-        >
           {i.title}
-        </Typography>
-      </Col>
+        </p>
+      </div>
     ))}
-  </Row>
+  </div>
 );
 
 export default Badges;
