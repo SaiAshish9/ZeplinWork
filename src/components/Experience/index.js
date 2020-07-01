@@ -22,20 +22,28 @@ const Experience = () => (
           display: "flex",
           flexDirection: "column",
           // alignItems: "center",
+          fontFamily: "Inter-Medium",
           justifyContent: "center",
         }}
       >
-        <Typography style={{ fontSize: 48, fontWeight: 500, color: "#fff" }}>
+        <Typography style={{ fontSize: 48, lineHeight: "60px", color: "#fff" }}>
           Working with Pracify helps you earn money,
         </Typography>
-        <Typography style={{ fontSize: 48, fontWeight: 500, color: "#fff" }}>
+        <Typography style={{ fontSize: 48, color: "#fff", lineHeight: "60px" }}>
           gain experience,and grow professionally.
         </Typography>
       </div>
-      <Row style={{ padding: "1.5rem 0", width: "100%" }}>
+      <Row style={{ marginTop: 66, width: "100%" }}>
         <div style={{ marginRight: "30%" }}>
           <Typography
-            style={{ fontSize: "2.5rem", fontWeight: 500, color: "#fff" }}
+            style={{
+              fontSize: 42,
+              fontWeight: 500,
+              fontFamily: "Inter-Medium",
+              color: "#fff",
+              lineHeight: "60px",
+              marginBottom: 10,
+            }}
           >
             From
           </Typography>
@@ -46,6 +54,7 @@ const Experience = () => (
               justifyContent: "space-between",
               height: 150,
               fontSize: 20,
+              lineHeight: "50px",
             }}
           >
             {[
@@ -70,7 +79,14 @@ const Experience = () => (
         </div>
         <div>
           <Typography
-            style={{ fontSize: "2.5rem", fontWeight: 500, color: "#fff" }}
+            style={{
+              fontSize: 42,
+              fontWeight: 500,
+              fontFamily: "Inter-Medium",
+              color: "#fff",
+              lineHeight: "60px",
+              marginBottom: 10,
+            }}
           >
             To
           </Typography>{" "}
@@ -81,6 +97,7 @@ const Experience = () => (
               justifyContent: "space-between",
               height: 150,
               fontSize: 20,
+              lineHeight: "50px",
             }}
           >
             {[

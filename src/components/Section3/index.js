@@ -4,7 +4,7 @@ import Option1 from "../../test/selection.png";
 import Option2 from "../../test/submission.png";
 import Option3 from "../../test/payment.png";
 import BlueGrid from "../../assets/svgs/blueGrid";
-import BlueBg from "../../test/blue.svg"
+import BlueBg from "../../test/blue.svg";
 
 const images = [Option1, Option2, Option3];
 
@@ -103,9 +103,6 @@ const Section3 = () => {
     },
   ];
 
-
-
-
   return (
     <Row style={{ marginBottom: "17rem" }}>
       <Col
@@ -126,9 +123,11 @@ const Section3 = () => {
             <span
               style={{
                 fontWeight: 600,
-                fontSize: "2.3rem",
+                fontSize: 38,
                 color: "#333e49",
-                opacity: 0.9,
+                fontFamily: "Inter-SemiBold",
+                // opacity: 0.9,
+                lineHeight: "42px",
                 marginLeft: 10,
               }}
             >
@@ -183,8 +182,10 @@ const Section3 = () => {
                       }}
                       style={{
                         color: "#b8b8b8",
-                        fontSize: "1.2rem",
+                        fontSize: 20,
+                        lineHeight: "22px",
                         fontWeight: 600,
+                        fontFamily: "Inter-SemiBold",
                         marginRight: "10px",
                         cursor: "pointer",
                       }}
@@ -201,8 +202,10 @@ const Section3 = () => {
                         }}
                         style={{
                           color: i.color,
-                          fontSize: "1.2rem",
+                          fontSize: 20,
+                          lineHeight: "22px",
                           fontWeight: 600,
+                          fontFamily: "Inter-SemiBold",
                           margin: "0 10px",
                           cursor: "pointer",
                         }}
@@ -225,17 +228,34 @@ const Section3 = () => {
               style={{
                 color: "#3d3d3d",
                 fontSize: 20,
-                lineHeight: 1.6,
+                lineHeight: "32px",
                 fontWeight: 600,
-                width: "70%",
-                opacity: 0.9,
+                // width: "70%",
+                fontFamily: "Inter-SemiBold",
+                marginTop: 10,
               }}
             >
-              {selected === 0
-                ? "Apply to jobs that match your skills and interests at a single click on the mobile app or website."
-                : selected === 1
-                ? "Complete tasks before the deadline and submit proof of work completed on the mobile app or website."
-                : "Get paid directly into Pracify wallet. Transfer your earnings into your Paytm or Bank account."}
+              {selected === 0 ? (
+                <div>
+                  <Typography>Apply to jobs that match your skills</Typography>
+                  <Typography>
+                    and interests at a single click on the
+                  </Typography>
+                  <Typography>mobile app or website.</Typography>
+                </div>
+              ) : selected === 1 ? (
+                <div>
+                  <Typography>Complete tasks before the deadline</Typography>
+                  <Typography>and submit proof of work completed</Typography>
+                  <Typography>on the mobile app or website.</Typography>
+                </div>
+              ) : (
+                <div>
+                  <Typography>Get paid directly into Pracify</Typography>
+                  <Typography>wallet. Transfer your earnings into</Typography>
+                  <Typography>your Paytm or Bank account.</Typography>
+                </div>
+              )}
             </Typography>
           </Col>
         </div>

@@ -33,7 +33,7 @@ const options = [
   return (
     <Row style={{ margin: "10vh 0" }}>
       <Col span={10}>
-        <div >
+        <div>
           <JobsComponent />
         </div>
         <Row
@@ -55,12 +55,13 @@ const options = [
         <Typography
           style={{
             fontSize: 26,
-            fontWeight: "bolder",
+            // fontWeight: "bolder",
             color: "#333e49",
-            fontFamily: "'Inter',sans-serif",
-            lineHeight: 1.38,
-            opacity: 0.9,
+            fontFamily: "Inter-SemiBold",
+            fontWeight: 600,
+            lineHeight: "36px",
             textAlign: "start",
+            fontStretch: "normal",
           }}
         >
           With Pracify you can work from
@@ -71,8 +72,11 @@ const options = [
           style={{
             margin: "10px 0",
             fontSize: 20,
-            fontWeight: 600,
-            opacity: 0.9,
+            fontFamily: "Inter-Medium",
+            fontWeight: 500,
+            lineHeight: "40px",
+            fontStretch: "normal",
+            fontStyle: "normal",
           }}
         >
           Get paid for completing tasks online
@@ -110,9 +114,9 @@ const options = [
                 </Typography>
                 <Typography
                   style={{
-                    fontWeight: 600,
+                    fontFamily: "Inter-SemiBold",
                     color: "#ea907a",
-                    lineHeight: 1.64,
+                    lineHeight: "36px",
                     fontSize: 22,
                   }}
                 >
@@ -124,11 +128,12 @@ const options = [
                   className="animate__animated animate__fadeIn"
                   style={{
                     color: "#9ba0a6",
-                    fontWeight: 600,
-                    opacity: 0.7,
+                    fontFamily: "Inter-Medium",
+                    opacity: 0.6,
                     fontSize: 18,
                     marginTop: 5,
                     marginLeft: "12%",
+                    lineHeight: "26px",
                   }}
                 >
                   {i.description}

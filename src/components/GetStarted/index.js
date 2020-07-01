@@ -21,7 +21,7 @@ const GetStarted = () => {
                 width: 756,
                 height: 66,
                 fontFamily: "Inter-SemiBold",
-                // fontWeight: 600,
+                fontWeight: 600,
                 fontStretch: "normal",
                 fontStyle: "normal",
                 letterSpacing: "normal",

@@ -52,7 +52,9 @@ const Footer = () => {
           />
           <Typography
             style={{
-              fontSize: "1rem",
+              fontSize: 14,
+              lineHeight: "24px",
+              fontFamily: "Inter-SemiBold",
               color: "#333e49",
               fontWeight: 600,
               marginLeft: "2rem",
@@ -61,6 +63,7 @@ const Footer = () => {
             }}
           >
             Pracify helps companies scale using their network of on-demand
+            <br />
             workers comprised of India's college students & young adults.
           </Typography>
           <Row style={{ marginLeft: "1.5rem" }}>
@@ -86,6 +89,7 @@ const Footer = () => {
             border: "1px solid #333e49",
             borderRight: "none",
             padding: "2rem 3rem",
+            paddingTop: "4rem",
           }}
         >
           <Row>
@@ -95,6 +99,8 @@ const Footer = () => {
                   style={{
                     marginBottom: 20,
                     color: "#333e49",
+                    fontFamily: "Inter-SemiBold",
+                    lineHeight: "30px",
                     fontWeight: 600,
                     fontSize: 15,
                   }}
@@ -107,10 +113,10 @@ const Footer = () => {
                     key={b}
                     style={{
                       color: "#959595",
-                      fontWeight: 600,
-                      opacity: 0.8,
-                      fontSize: 15,
-                      lineHeight: 2,
+                      fontWeight: 500,
+                      lineHeight: "30px",
+                      fontSize: 14,
+                      fontFamily: "Inter-Medium",
                     }}
                   >
                     {a}
@@ -132,8 +138,8 @@ const Footer = () => {
           style={{
             color: "#333e49",
             fontSize: 16,
-            fontWeight: 600,
-            opacity: 0.9,
+            lineHeight: "18px",
+            fontFamily: "Inter-SemiBold",
           }}
         >
           Made with <Heart /> in India
@@ -143,7 +149,8 @@ const Footer = () => {
             color: "#333e49",
             fontSize: 16,
             fontWeight: 600,
-            opacity: 0.9,
+            fontFamily: "Inter-SemiBold",
+            lineHeight: "18px"
           }}
         >
           Copyright © 2020 Tyche Ventures Private Limited

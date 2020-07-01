@@ -1,5 +1,5 @@
 import React from "react";
-// import { Row, Col, Typography } from "antd";
+import { Typography } from "antd";
 // import Certification from "../../assets/svgs/certification";
 // import Bars from "../../assets/svgs/bars";
 
@@ -33,6 +33,7 @@ const Badges = () => (
       padding: "10rem 15rem",
       background: "#fff",
       display: "flex",
+      fontSize:20,
       flexDirection: "row",
       justifyContent: "space-around",
       alignItems: "center",
@@ -47,21 +48,25 @@ const Badges = () => (
           alignItems: "center",
         }}
       >
-        <img 
-        data-aos="zoom-in"
-        src={i.icon} alt={k} />
+        <img
+        style={{
+          height:128.8,
+          width:124
+        }}
+        data-aos="zoom-in" src={i.icon} alt={k} />
 
-        <p
+        <Typography
           style={{
             color: " #333e49",
-            fontSIze: 20,
-            fontWeight:'bold',
-            lineHeight: 1.1,
-            marginTop: '2rem',
+            // fontSIze: 50,
+            // fontWeight:'bold',
+            lineHeight: "22px",
+            marginTop: "2rem",
+            fontSIze: "20px",
           }}
         >
           {i.title}
-        </p>
+        </Typography>
       </div>
     ))}
   </div>

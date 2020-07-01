@@ -2,16 +2,27 @@
   font-family: 'Inter';
   src: local('Inter'), url('./assets/fonts/Inter-Regular.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Inter-Medium';
-  src: local('Inter'), url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+  src: local('Inter-Medium'), url('./assets/fonts/Inter-Medium.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Inter-SemiBold';
-  src: local('Inter'), url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  src: local('Inter-SemiBold'), url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Inter-Bold';
+  src: local('Inter-Bold'), url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Light';
+  src: local('Inter-Light'), url('./assets/fonts/Inter-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: local('Inter-ExtraLight'), url('./assets/fonts/Inter-ExtraLight.ttf') format('truetype');
+}
+
 
 body {
   margin: 0;
