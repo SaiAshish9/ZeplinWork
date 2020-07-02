@@ -34,7 +34,7 @@ const Tasks = () => {
   ];
 
   return (
-    <Row style={{ margin: "10vh 0" }}>
+    <Row style={{ margin: "15vh 0" }}>
       <Col span={10}>
         <div>
           <img src={MobileBg} allt="bg" />
@@ -60,8 +60,9 @@ const Tasks = () => {
         </div>
         <Row
           data-aos="slide-right"
+          data-aos-offset="700"
           // className="animate__animated animate__slideInLeft"
-          style={{ position: "relative", bottom: "20rem", left: "4rem" }}
+          style={{ position: "relative", bottom: "18rem", left: "4rem" }}
         >
           <ArrowBow />
         </Row>
