@@ -60,7 +60,7 @@ const Tasks = () => {
         </div>
         <Row
           data-aos="slide-right"
-          data-aos-offset="700"
+          data-aos-offset="500"
           // className="animate__animated animate__slideInLeft"
           style={{ position: "relative", bottom: "18rem", left: "4rem" }}
         >
