@@ -16,6 +16,7 @@ const Navbar = () => {
         background: "#fff",
         height: "10vh",
         position: "fixed",
+        zIndex:10,
         width: "100vw",
         top: 0,
       }}

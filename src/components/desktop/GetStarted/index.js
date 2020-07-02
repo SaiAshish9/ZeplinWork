@@ -54,7 +54,6 @@ const GetStarted = () => {
           <Row align="center" justify="center" style={{ marginTop: 28 }}>
             <Button
               className="animate__animated animate__zoomIn"
-              // className="animate__animated animate__rubberBand"
               onMouseEnter={() => {
                 slideLeft(true);
               }}
@@ -66,7 +65,6 @@ const GetStarted = () => {
               style={{
                 height: 60,
                 width: 263,
-                // padding: "0 4rem",
                 borderRadius: 10,
                 border: "solid 2px #ea907a",
                 color: "#ea907a",
