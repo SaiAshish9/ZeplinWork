@@ -52,8 +52,9 @@ const Experience = () => (
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              height: 150,
-              fontSize: 20,
+              // height: 150,
+              fontSize: 26,
+              // marginBottom:"10vh",
               lineHeight: "50px",
             }}
           >
@@ -66,9 +67,9 @@ const Experience = () => (
               <p
                 style={{
                   color: "#fff",
-                  // margin: "10px 0",
-                  fontSIze: 48,
-                  lineHeight: 1.25,
+                  margin: "3px 0",
+                  fontSIze: 26,
+                  lineHeight: "50px",
                 }}
                 key={k}
               >
@@ -92,11 +93,11 @@ const Experience = () => (
           </Typography>{" "}
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
+              // display: "flex",
+              // flexDirection: "column",
+              // justifyContent: "space-between",
               height: 150,
-              fontSize: 20,
+              fontSize: 26,
               lineHeight: "50px",
             }}
           >
@@ -109,9 +110,9 @@ const Experience = () => (
               <p
                 style={{
                   color: "#fff",
-                  // margin: "10px 0",
-                  fontSIze: 48,
-                  lineHeight: 1.25,
+                  margin: "7px 0",
+                  fontSIze: 26,
+                  // lineHeight: "50px",
                 }}
                 key={k}
               >

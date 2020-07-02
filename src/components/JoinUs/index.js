@@ -84,8 +84,9 @@ const JoinUs = () => {
           >
             Get the Pracify app and work for your favourite companies.
             <br />
-            Create your account within minutes and pick gigs which match your
-            skills and interests
+            Create your account within minutes and pick gigs which
+            <br/> 
+            match your skills and interests
           </Typography>
 
           <div style={{ margin: "1vh 0", display: "flex", width: "55%" }}>

@@ -108,7 +108,7 @@ const Section3 = () => {
       <Col
         span={12}
         style={{
-          padding: "0 5rem",
+          paddingLeft: " 5rem",
         }}
       >
         <div style={{ display: "flex" }}>
@@ -116,7 +116,9 @@ const Section3 = () => {
             style={{
               fontWeight: 600,
               color: options[selected]["color"],
-              fontSize: "2.3rem",
+              fontFamily: "Inter-SemiBold",
+              lineHeight: "42px",
+              fontSize: 38,
             }}
           >
             Hassle Free.

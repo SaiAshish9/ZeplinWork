@@ -1,40 +1,62 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Row, Col, Typography } from "antd";
 import JobsComponent from "../../assets/svgs/jobsComplete";
 import ArrowBow from "../../assets/svgs/arrowBow";
 // import WorkRm from "../../assets/svgs/workRm";
-import WorkRemotely from '../../test/workRemotely.svg' 
-import Jobs from "../../test/jobs.svg"
-import Payments from "../../test/payments.svg"
+import WorkRemotely from "../../test/workRemotely.svg";
+import Jobs from "../../test/jobs.svg";
+import Payments from "../../test/payments.svg";
+import Mobile from "../../assets/test/mobile.png";
+import MobileBg from "../../assets/test/mobileBg.svg";
+import MobileGrid from "../../assets/test/mobileGrid.svg";
 
 const Tasks = () => {
+  const [selected, setSelected] = useState(0);
 
-  const [selected,setSelected]=useState(0)
-
-const options = [
-  {
-    title: "Jobs for Everyone",
-    description: "Find and apply to jobs that match your skills & interest.",
-    icon: Jobs,
-  },
-  {
-    title: "Work Remotely",
-    description: "Work on the go using your smartphone or computer according to your own schedule. ",
-    icon: WorkRemotely,
-  },
-  {
-    title: "Fast & Secure Payments",
-    description: "Get paid directly into your Pracify wallet after completing the work successfully.",
-    icon: Payments,
-  },
-];
-
+  const options = [
+    {
+      title: "Jobs for Everyone",
+      description: "Find and apply to jobs that match your skills & interest.",
+      icon: Jobs,
+    },
+    {
+      title: "Work Remotely",
+      description:
+        "Work on the go using your smartphone or computer according to your own schedule. ",
+      icon: WorkRemotely,
+    },
+    {
+      title: "Fast & Secure Payments",
+      description:
+        "Get paid directly into your Pracify wallet after completing the work successfully.",
+      icon: Payments,
+    },
+  ];
 
   return (
     <Row style={{ margin: "10vh 0" }}>
       <Col span={10}>
         <div>
-          <JobsComponent />
+          <img src={MobileBg} allt="bg" />
+          <img
+            src={MobileGrid}
+            alt="grid"
+            style={{
+              position: "absolute",
+              left: "10vw",
+              top: "1rem",
+            }}
+          />
+          <img
+            src={Mobile}
+            alt="grid"
+            style={{
+              position: "absolute",
+              left: "12vw",
+              top: "3.6rem",
+            }}
+          />
+          {/* <JobsComponent /> */}
         </div>
         <Row
           data-aos="slide-right"
@@ -46,9 +68,9 @@ const options = [
       </Col>
       <Col
         style={{
-          paddingLeft: "5rem",
+          paddingLeft: "4rem",
           paddingTop: "7rem",
-          width: "40%",
+          width: "45%",
           marginLeft: "10%",
         }}
       >
@@ -90,13 +112,20 @@ const options = [
                 setSelected(k);
               }}
               style={{
-                padding: "1.5rem 1rem",
+                padding: "1.5rem 2rem",
                 borderTop: "1px solid #ea907a",
+                width: "90%",
                 borderBottom: k === 2 && "1px solid #ea907a",
                 cursor: "pointer",
+                // marginRight:'20%'
               }}
             >
-              <Row style={{ display: "flex", alignItems: "center" }}>
+              <Row
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
                 <Typography
                   style={{
                     background: "#fdf4f1",
@@ -132,7 +161,7 @@ const options = [
                     opacity: 0.6,
                     fontSize: 18,
                     marginTop: 5,
-                    marginLeft: "12%",
+                    marginLeft: "3.8rem",
                     lineHeight: "26px",
                   }}
                 >
@@ -144,6 +173,7 @@ const options = [
         </Col>
       </Col>
     </Row>
-  );}
+  );
+};
 
 export default Tasks;
