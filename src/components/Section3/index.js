@@ -85,7 +85,7 @@ const InActiveImg3 = () => (
 );
 
 const Section3 = () => {
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
   // const [unselected, setUnselected] = useState([0, 2]);
 
   const options = [
