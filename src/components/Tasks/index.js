@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Row, Col, Typography } from "antd";
-import JobsComponent from "../../assets/svgs/jobsComplete";
+// import JobsComponent from "../../assets/svgs/jobsComplete";
 import ArrowBow from "../../assets/svgs/arrowBow";
 // import WorkRm from "../../assets/svgs/workRm";
 import WorkRemotely from "../../test/workRemotely.svg";
