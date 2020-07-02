@@ -37,7 +37,7 @@ const Tasks = () => {
     <Row style={{ margin: "15vh 0" }}>
       <Col span={10}>
         <div>
-          <img src={MobileBg} allt="bg" />
+          <img src={MobileBg} alt="bg" />
           <img
             src={MobileGrid}
             alt="grid"
