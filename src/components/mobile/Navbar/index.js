@@ -4,7 +4,7 @@ import { BsFilterLeft } from "react-icons/bs";
 import { Drawer } from "antd";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(!false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div
