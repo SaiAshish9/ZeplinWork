@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Button, Typography } from "antd";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../../assets/images/logo.png";
 
 
 const Navbar = () => {

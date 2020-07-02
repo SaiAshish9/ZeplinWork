@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Col, Row, Typography } from "antd";
-import Option1 from "../../test/selection.png";
-import Option2 from "../../test/submission.png";
-import Option3 from "../../test/payment.png";
-import BlueGrid from "../../assets/svgs/blueGrid";
-import BlueBg from "../../test/blue.svg";
+import Option1 from "../../../test/selection.png";
+import Option2 from "../../../test/submission.png";
+import Option3 from "../../../test/payment.png";
+import BlueGrid from "../../../assets/svgs/blueGrid";
+import BlueBg from "../../../test/blue.svg";
 
 const images = [Option1, Option2, Option3];
 

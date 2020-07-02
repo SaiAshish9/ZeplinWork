@@ -1,12 +1,12 @@
 import React from "react";
 import { Row, Col, Typography } from "antd";
-import Logo from "../../assets/images/logo.png";
-import AppStore from "../../assets/svgs/appStore";
-import Heart from '../../assets/svgs/heart'
-import Instagram from "../../assets/svgs/instagram"
-import Facebook from "../../assets/svgs/facebook"
-import Twitter from "../../assets/svgs/twitter"
-import LinkedIn from "../../assets/svgs/linkedin"
+import Logo from "../../../assets/images/logo.png";
+import AppStore from "../../../assets/svgs/appStore";
+import Heart from '../../../assets/svgs/heart'
+import Instagram from "../../../assets/svgs/instagram"
+import Facebook from "../../../assets/svgs/facebook"
+import Twitter from "../../../assets/svgs/twitter"
+import LinkedIn from "../../../assets/svgs/linkedin"
 
 const Footer = () => {
   const footerOptions = [

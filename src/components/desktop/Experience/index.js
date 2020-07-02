@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Typography } from "antd";
-import Grid5 from "../../assets/svgs/grid5";
+import Grid5 from "../../../assets/svgs/grid5";
 
 const Experience = () => (
   <Row

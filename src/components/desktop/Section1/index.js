@@ -1,16 +1,16 @@
 import React from "react";
 import { Row, Col } from "antd";
-import PinkGrid from "../../assets/svgs/pinkGrid";
+import PinkGrid from "../../../assets/svgs/pinkGrid";
 // import Wallet from "../../assets/svgs/wallet";
 // import Verify from "./verify";
 // import BusinessCard from "./businessCard";
 // import NotificationCard from "./notifications";
 // import ProfileCard from "./profile";
-import VerifyStatus from "../../test/verifyStatus.png";
-import Card from "../../test/card.png";
-import BusinessDev from "../../test/businessDev.png";
-import Notifications from "../../test/notifications.png";
-import ProfileScore from "../../test/profileScore.png";
+import VerifyStatus from "../../../test/verifyStatus.png";
+import Card from "../../../test/card.png";
+import BusinessDev from "../../../test/businessDev.png";
+import Notifications from "../../../test/notifications.png";
+import ProfileScore from "../../../test/profileScore.png";
 
 const Section1 = () => (
   <Row
