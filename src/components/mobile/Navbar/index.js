@@ -55,6 +55,7 @@ const Navbar = () => {
             margin: "10vh 5vw ",
             fontSize: 18,
             lineHeight: 1.22,
+            fontFamily: "Inter-SemiBold"
           }}
         >
           <p
