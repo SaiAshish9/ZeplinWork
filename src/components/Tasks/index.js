@@ -9,6 +9,7 @@ import Payments from "../../test/payments.svg";
 import Mobile from "../../assets/test/mobile.png";
 import MobileBg from "../../assets/test/mobileBg.svg";
 import MobileGrid from "../../assets/test/mobileGrid.svg";
+import MobileInclinedBg from '../../assets/test/mobileInclinedBg.svg'
 
 const Tasks = () => {
   const [selected, setSelected] = useState(0);
@@ -66,6 +67,17 @@ const Tasks = () => {
         >
           <ArrowBow />
         </Row>
+
+        <img
+          src={MobileInclinedBg}
+          alt="grid"
+          style={{
+            position: "absolute",
+            left: "23rem",
+            zIndex:-1,
+            bottom: "12rem",
+          }}
+        />
       </Col>
       <Col
         style={{
