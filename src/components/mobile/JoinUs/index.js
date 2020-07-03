@@ -16,8 +16,6 @@ const JoinUs = () => {
   return (
     <div
       style={{
-        position: 'absolute',
-        right:0,
         width: "100vw",
         paddingBottom: "10vh",
         background: "linear-gradient(136deg, #7a81ea 33%, #545bcd 100%)",
