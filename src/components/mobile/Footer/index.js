@@ -85,6 +85,7 @@ const Footer = () => {
             style={{
               width: "30%",
               marginRight: "10px",
+              marginTop:5
             }}
           />
           <div

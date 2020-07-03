@@ -41,7 +41,7 @@ const Tasks = () => {
           >
             <Typography
               style={{
-                fontSize: '1.2rem',
+                fontSize: '1.3rem',
                 // fontWeight: "bolder",
                 divor: "#333e49",
                 fontFamily: "Inter-SemiBold",
