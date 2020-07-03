@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React from "react";
 import { Typography, Row,Carousel } from "antd";
 import GooglePlay from "../../../assets/images/google-play.png";
 import AppStore from "../../../assets/svgs/appStore";
@@ -8,7 +8,6 @@ import AndroidMobilePic from "../../../assets/images/AndroidMobile.png";
 import LoginMobilePic from "../../../assets/images/LoginMobile.png";
 
 const JoinUs = () => {
-  const [android, isAndroid] = useState(false);
 
     // setInterval(() => {
     //   isAndroid(!android);
