@@ -104,8 +104,9 @@ const Footer = () => {
         <Typography
           style={{
             color: "#333e49",
-            fontSize: 10,
-            margin: "1rem",
+            fontSize: 12,
+            margin: "1rem 0",
+            marginLeft:"2rem",
             fontWeight: 600,
             fontFamily: "Inter-SemiBold",
             lineHeight: "18px",
