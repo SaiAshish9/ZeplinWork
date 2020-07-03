@@ -73,7 +73,7 @@ const Section3 = () => {
         },
       ];
     return (
-      <div style={{ padding: "2rem"}}>
+      <div style={{ paddingLeft: "2rem" }}>
         <div>
           <Typography
             style={{
@@ -96,7 +96,18 @@ const Section3 = () => {
               }}
             >
               Working has never
-              <br /> been this easier and fun.
+            </span>
+            <br />
+            <span
+              style={{
+                fontWeight: 600,
+                fontSize: "2rem",
+                color: "#333e49",
+                fontFamily: "Inter-SemiBold",
+                lineHeight: "42px",
+              }}
+            >
+              been this easier and fun.
             </span>
           </Typography>
         </div>
@@ -124,49 +135,45 @@ const Section3 = () => {
           }}
         />
 
-{
-    ActiveImages[selected]
-}
+        {ActiveImages[selected]}
 
-<div style={{display: "flex",marginTop:"27vh"}}>
+        <div style={{ display: "flex", marginTop: "27vh" }}>
+          <div style={{ minHeight: "30vh" }}>
+            <div
+              className={selected === 0 && "animate__animated animate__pulse"}
+              style={{
+                width: "1rem",
+                height: selected === 0 ? "5.5rem" : "1rem",
+                background: "#ff5e16",
+                borderRadius: selected === 0 ? 9 : "50%",
+                margin: "10px 0",
+              }}
+            ></div>
+            <div
+              className={selected === 1 && "animate__animated animate__pulse"}
+              style={{
+                width: "1rem",
+                height: selected === 1 ? "5.5rem" : "1rem",
+                background: "#4385e0",
+                borderRadius: selected === 1 ? 9 : "50%",
+                margin: "10px 0",
+              }}
+            ></div>
+            <div
+              className={selected === 2 && "animate__animated animate__pulse"}
+              style={{
+                width: "1rem",
+                height: selected === 2 ? "5.5rem" : "1rem",
+                background: "#4d52d1",
+                borderRadius: selected === 2 ? 9 : "50%",
+                margin: "10px 0",
+                transition: selected === 2 && "0.4s ease-out-in",
+              }}
+            ></div>
+          </div>
 
-
-        <div style={{ minHeight: "30vh" }}>
-          <div
-            className={selected === 0 && "animate__animated animate__pulse"}
-            style={{
-              width: "1rem",
-              height: selected === 0 ? "5.5rem" : "1rem",
-              background: "#ff5e16",
-              borderRadius: selected === 0 ? 9 : "50%",
-              margin: "10px 0",
-            }}
-          ></div>
-          <div
-            className={selected === 1 && "animate__animated animate__pulse"}
-            style={{
-              width: "1rem",
-              height: selected === 1 ? "5.5rem" : "1rem",
-              background: "#4385e0",
-              borderRadius: selected === 1 ? 9 : "50%",
-              margin: "10px 0",
-            }}
-          ></div>
-          <div
-            className={selected === 2 && "animate__animated animate__pulse"}
-            style={{
-              width: "1rem",
-              height: selected === 2 ? "5.5rem" : "1rem",
-              background: "#4d52d1",
-              borderRadius: selected === 2 ? 9 : "50%",
-              margin: "10px 0",
-              transition: selected === 2 && "0.4s ease-out-in",
-            }}
-          ></div>
-        </div>
-
- <div style={{ marginLeft: "10%",marginTop:'1rem' }}>
-            <div style={{display: "flex"}}>
+          <div style={{ marginLeft: "10%", marginTop: "1rem" }}>
+            <div style={{ display: "flex" }}>
               {options.map((i, k) => {
                 if (k !== selected) {
                   return (
@@ -176,7 +183,7 @@ const Section3 = () => {
                       }}
                       style={{
                         color: "#b8b8b8",
-                        fontSize: '1rem',
+                        fontSize: "1rem",
                         lineHeight: "22px",
                         fontWeight: 600,
                         fontFamily: "Inter-SemiBold",
@@ -196,7 +203,7 @@ const Section3 = () => {
                         }}
                         style={{
                           color: i.color,
-                          fontSize: '1rem',
+                          fontSize: "1rem",
                           lineHeight: "22px",
                           fontWeight: 600,
                           fontFamily: "Inter-SemiBold",
@@ -211,8 +218,8 @@ const Section3 = () => {
                           background: i.color,
                           width: "50%",
                           height: 3,
-                          marginLeft:'25%',
-                          marginTop:10
+                          marginLeft: "25%",
+                          marginTop: 10,
                         }}
                       />
                     </div>
@@ -223,7 +230,7 @@ const Section3 = () => {
             <Typography
               style={{
                 color: "#3d3d3d",
-                fontSize:'0.9rem',
+                fontSize: "0.9rem",
                 lineHeight: "32px",
                 fontWeight: 600,
                 fontFamily: "Inter-SemiBold",
@@ -253,7 +260,7 @@ const Section3 = () => {
               )}
             </Typography>
           </div>
-      </div>
+        </div>
       </div>
     );
 }

@@ -121,7 +121,7 @@ const Tasks = () => {
                         color: "#9ba0a6",
                         fontFamily: "Inter-Medium",
                         opacity: 0.6,
-                        fontSize: 15,
+                        fontSize: 13,
                         marginTop: 5,
                         marginLeft: "3.8rem",
                         lineHeight: "26px",
