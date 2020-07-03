@@ -5,7 +5,7 @@ import ArrowBow from "../../../assets/svgs/arrowBow";
 // import WorkRm from "../../assets/svgs/workRm";
 import WorkRemotely from "../../../assets/test1/workRemotely.svg";
 import Jobs from "../../../assets/test1/jobs.svg";
-import Payments from "../../../test/payments.svg";
+import Payments from "../../../assets/test1/payments.svg";
 import Mobile from "../../../assets/test/mobile.png";
 import MobileBg from "../../../assets/test/mobileBg.svg";
 import MobileGrid from "../../../assets/test/mobileGrid.svg";
