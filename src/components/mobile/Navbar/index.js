@@ -83,6 +83,9 @@ const Navbar = () => {
               textAlign: "center",
               borderBottom: "1px solid #f4f4f4",
               padding: "1rem 0",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             Home
@@ -92,7 +95,10 @@ const Navbar = () => {
               textAlign: "center",
               // margin: "-10px 0",
               borderBottom: "1px solid #f4f4f4",
-              padding: "1rem 0",
+              paddingBottom: "1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             Gigs
@@ -100,8 +106,11 @@ const Navbar = () => {
           <p
             style={{
               textAlign: "center",
-              padding: "1rem 0",
+              paddingBottom: "1rem",
               borderBottom: "1px solid #f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             Internships
@@ -109,8 +118,11 @@ const Navbar = () => {
           <p
             style={{
               textAlign: "center",
-              padding: "1rem 0",
+              paddingBottom: "1rem",
               borderBottom: "1px solid #f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             Login
@@ -124,7 +136,7 @@ const Navbar = () => {
               fontSize: 18,
               lineHeight: 1.22,
               fontFamily: "Inter",
-              marginTop:10,
+              marginTop: 30,
               border: " 1px solid #000",
               color: "#000",
               marginRight: "30px",
