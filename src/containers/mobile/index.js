@@ -10,7 +10,7 @@ const JoinUs=lazy(()=>import("../../components/mobile/JoinUs"))
 const Mobile= () => {
     return (
       <Suspense fallback={<div></div>}>
-        <Fragment>
+        <div style={{overflowX: 'hidden'}}>
             <Navbar />
             <GetStarted/>
             <Tasks/>
@@ -18,7 +18,7 @@ const Mobile= () => {
             <Experience />
             <Badges />
             <JoinUs/>
-        </Fragment>
+        </div>
       </Suspense>
     );
 }
