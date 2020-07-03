@@ -3,10 +3,10 @@ import MobileBg from "../../../assets/test/mobileBg.svg";
 import Mobile from "../../../assets/test/mobile.png";
 import MobileGrid from "../../../assets/test/mobileGrid.svg";
 import MobileInclinedBg from "../../../assets/test/mobileInclinedBg.svg";
-import ArrowBow from "../../../test/arrowTarget.svg";
-import WorkRemotely from "../../../test/workRemotely.svg";
-import Jobs from "../../../test/jobs.svg";
-import Payments from "../../../test/payments.svg";
+import ArrowBow from "../../../assets/test1/arrowTarget.svg";
+import WorkRemotely from "../../../assets/test1/workRemotely.svg";
+import Jobs from "../../../assets/test1/jobs.svg";
+import Payments from "../../../assets/test1/payments.svg";
 import {Typography} from 'antd'
 
 const Tasks = () => {

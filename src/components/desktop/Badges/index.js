@@ -3,10 +3,10 @@ import { Typography } from "antd";
 // import Certification from "../../assets/svgs/certification";
 // import Bars from "../../assets/svgs/bars";
 
-import Upskill from "../../../test/upskill.png";
-import Explore from "../../../test/explore.png";
-import Professionally from "../../../test/Professionally.svg";
-import Badge from "../../../test/badge.svg";
+import Upskill from "../../../assets/test1/upskill.png";
+import Explore from "../../../assets/test1/explore.png";
+import Professionally from "../../../assets/test1/Professionally.svg";
+import Badge from "../../../assets/test1/badge.svg";
 
 const data = [
   {

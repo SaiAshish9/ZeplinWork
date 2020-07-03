@@ -1,10 +1,10 @@
 import React,{ useState} from 'react'
 import {Typography} from 'antd'
 import BlueGrid from "../../../assets/svgs/blueGrid";
-import BlueBg from "../../../test/blue.svg";
-import Option1 from "../../../test/selection.png";
-import Option2 from "../../../test/submission.png";
-import Option3 from "../../../test/payment.png";
+import BlueBg from "../../../assets/test1/blue.svg";
+import Option1 from "../../../assets/test1/selection.png";
+import Option2 from "../../../assets/test1/submission.png";
+import Option3 from "../../../assets/test1/payment.png";
 
 
 
