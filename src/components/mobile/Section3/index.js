@@ -73,7 +73,7 @@ const Section3 = () => {
         },
       ];
     return (
-      <div style={{ padding: "2rem", marginBottom: "10rem" }}>
+      <div style={{ padding: "2rem"}}>
         <div>
           <Typography
             style={{
