@@ -106,7 +106,7 @@ const Footer = () => {
             color: "#333e49",
             fontSize: 12,
             margin: "1rem 0",
-            marginLeft:"2rem",
+            marginLeft:"1.5rem",
             fontWeight: 600,
             fontFamily: "Inter-SemiBold",
             lineHeight: "18px",
