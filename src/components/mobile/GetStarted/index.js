@@ -80,7 +80,8 @@ const GetStarted = () => {
           </Button>
 
           <img
-            className="animate__animated animate__zoomIn"
+          data-aos="zoom-in"
+            // className="animate__animated animate__zoomIn"
             src={Section1}
             alt="Section1"
             style={{
