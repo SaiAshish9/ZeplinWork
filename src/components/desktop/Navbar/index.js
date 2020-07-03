@@ -22,7 +22,7 @@ const Navbar = () => {
           <Col>
             <img
               src={Logo}
-              style={{ height: "73.5px", width: "214px" }}
+              style={{ height: "90px", }}
               alt="practify"
             />
           </Col>

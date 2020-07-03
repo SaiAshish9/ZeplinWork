@@ -48,7 +48,7 @@ const Footer = () => {
           <img
             src={Logo}
             alt="practify"
-            style={{ height: "3rem", width: "8rem", marginLeft: "1rem" }}
+            style={{ height: "4rem", width: "6rem", marginLeft: "2rem" }}
           />
           <Typography
             style={{
