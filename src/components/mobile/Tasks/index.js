@@ -41,7 +41,7 @@ const Tasks = () => {
           >
             <Typography
               style={{
-                fontSize: '1.5rem',
+                fontSize: '1.2rem',
                 // fontWeight: "bolder",
                 divor: "#333e49",
                 fontFamily: "Inter-SemiBold",
@@ -51,16 +51,16 @@ const Tasks = () => {
                 fontStretch: "normal",
               }}
             >
-              With Pracify you can work from
-              wherever you want,whenever you want.
+              With Pracify you can work<br/> from
+              wherever you want,<br/>whenever you want.
             </Typography>
             <Typography
               style={{
                 margin: "10px 0",
-                fontSize: '1.2rem',
+                fontSize: '1rem',
                 fontFamily: "Inter-Medium",
                 fontWeight: 500,
-                lineHeight: "40px",
+                lineHeight: "36px",
                 fontStretch: "normal",
                 fontStyle: "normal",
               }}
@@ -118,7 +118,7 @@ const Tasks = () => {
                     <Typography
                       className="animate__animated animate__fadeIn"
                       style={{
-                        divor: "#9ba0a6",
+                        color: "#9ba0a6",
                         fontFamily: "Inter-Medium",
                         opacity: 0.6,
                         fontSize: 15,

@@ -133,8 +133,8 @@ const Section3 = () => {
                 marginLeft: 10,
               }}
             >
-              Working has <br />
-              never been this easier and fun.
+              Working has never <br />
+              been this easier and fun.
             </span>
           </Typography>
         </div>
