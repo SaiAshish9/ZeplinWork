@@ -63,7 +63,7 @@ const GetStarted = () => {
               slideLeft(false);
             }}
             type="text"
-            id="getStartedBtn"
+            id="getStartedBtn1"
             style={{
               height: 60,
               width: 263,
