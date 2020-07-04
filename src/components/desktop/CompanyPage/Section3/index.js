@@ -9,7 +9,7 @@ import MarketingSvg from "../../../../assets/images/marketing.svg";
 import BusinessDev from "../../../../assets/images/businessDev.svg";
 import ResearchSvg from "../../../../assets/images/research.svg";
 import DataSvg from "../../../../assets/images/dataModeration.svg";
-// import FreelancerSvg from "../../../../assets/images/freelancer.svg"
+import FreelancerSvg from "../../../../assets/images/freelancer.svg"
 
 
 
@@ -41,7 +41,7 @@ const options=[
     },
     {
         title:'Freelance',
-        icon:DataSvg
+        icon:FreelancerSvg
     }
 ]
 
