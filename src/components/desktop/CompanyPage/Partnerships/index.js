@@ -2,9 +2,8 @@ import React from "react";
 import Group from "../../../../assets/images/group.svg";
 import MegaPhone from "../../../../assets/images/megaphone.svg";
 import Discount from "../../../../assets/images/discount.svg";
-import ArrowRight from "../../../../assets/images/arrowRight.svg"
-import {Button} from 'antd'
-
+import ArrowRight from "../../../../assets/images/arrowRight.svg";
+import { Button } from "antd";
 
 const opportunities = [
   {
@@ -22,22 +21,81 @@ const opportunities = [
   {
     icon: Discount,
     title: "Student Offers",
-    desc: "Run student-specific discount offers by leveraging our database of verified students across India",
+    desc:
+      "Run student-specific discount offers by leveraging our database of verified students across India",
   },
 ];
-
 
 const Partnerships = () => {
   return (
     <div
       style={{
         width: "100%",
-        padding: "5rem 9rem",
+        padding: "4rem 9rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
+      <div
+      data-aos="zoom-in"
+        style={{
+          // background:`url(${Contact})`,
+          backgroundImage: "linear-gradient(91deg, #6e74c6 0%, #373a63 97%)",
+          height: 183,
+          borderRadius: 11,
+          boxShadow: "0 6px 25px 0 rgba(0, 0, 0, 0.16)",
+          marginBottom: 90,
+          padding: "60px 7rem",
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          //   alignItems: "center"
+        }}
+      >
+        <p
+          style={{
+            color: "#fff",
+            fontFamily: "Inter-SemiBold",
+            fontSize: "24px",
+            lineHeight: "30px",
+          }}
+        >
+          Built from the ground up to save your company money. Save time
+          <br /> with Pracify, a tech platform making outsourcing easier and
+          faster.
+        </p>
+
+        <Button
+          type="text"
+          style={{
+            height: 55,
+            borderRadius: 28,
+            fontSize: 18,
+            width:199,
+            backgroundColor: "#fff",
+            display: "flex",
+            alignItems:"center",
+            boxShadow: '0 8px 18px 0 rgba(0, 0, 0, 0.16)',
+            marginRight: "10%",
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "Inter-Bold",
+              fontSize: 18,
+              lineHeight: "30px",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              color: "#373a63",
+            }}
+          >
+            Contact Us
+          </p>
+        </Button>
+      </div>
+
       <p
         style={{
           fontFamily: "Inter-SemiBold",
@@ -45,6 +103,7 @@ const Partnerships = () => {
           fontSize: 36,
           lineHeight: "30px",
           fontWeight: 600,
+          margintop: "1rem",
           letterSpacing: "1.18px",
           color: "#333e49",
         }}
@@ -62,6 +121,7 @@ const Partnerships = () => {
         {opportunities.map((i, k) => (
           <div
             key={k}
+            data-aos="fade-right"
             style={{
               borderRadius: 12,
               height: 327,
@@ -122,22 +182,19 @@ const Partnerships = () => {
               }}
             >
               <p
-              style={{
-                  fontFamily:"Inter-SemiBold",
-                  fontSize:16,
-                  lineHeight:'30px',
+                style={{
+                  fontFamily: "Inter-SemiBold",
+                  fontSize: 16,
+                  lineHeight: "30px",
                   letterSpacing: "0.8px",
-                  justifyContent:"center",
-                  margin:'auto',
-                  display:'flex',
-                  alignItems:'center'
-              }}
-              >GET STARTED
-              <img
-              src={ArrowRight}
-              alt="arrow"
-              style={{marginLeft:10}}
-              />
+                  justifyContent: "center",
+                  margin: "auto",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                GET STARTED
+                <img src={ArrowRight} alt="arrow" style={{ marginLeft: 10 }} />
               </p>
             </Button>
           </div>

@@ -8,7 +8,7 @@ const Footer = lazy(() => import("../../../components/desktop/Homepage/Footer"))
 const Experience = lazy(() => import("../../../components/desktop/CompanyPage/Experience"));
 const Section1 = lazy(() => import("../../../components/desktop/CompanyPage/Section1"));
 const Partnerships=lazy(()=>import("../../../components/desktop/CompanyPage/Partnerships"))
-
+const Section3=lazy(()=>import("../../../components/desktop/CompanyPage/Section3"))
 
 const Company = () => {
     return (
@@ -22,6 +22,7 @@ const Company = () => {
           // style={{background:'black'}}
           /> */}
           <Section1 />
+          <Section3/>
           <Badges/>
           <Experience />
           <Partnerships/>
