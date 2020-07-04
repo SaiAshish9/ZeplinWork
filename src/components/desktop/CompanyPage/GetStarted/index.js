@@ -7,7 +7,7 @@ const GetStarted = () => {
   const [slide, slideLeft] = useState(false);
 
   return (
-    <Row style={{ marginTop: 233 }}>
+    <Row style={{ marginTop: 233,marginBottom:'40vh' }}>
       <Col span={24}>
         <Row align="center" justify="center">
           <Typography

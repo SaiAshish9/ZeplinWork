@@ -57,7 +57,8 @@ const Section3 = () => {
         width: "100vw",
         display: "flex",
         marginTop: "10vh",
-        height: "90vh",
+        // height: "90vh",
+        marginBottom: "30vh",
         flexWrap: "wrap",
       }}
     >
@@ -69,6 +70,7 @@ const Section3 = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          marginTop:"20vh"
         }}
       >
         {options.map((i, k) => (
@@ -120,7 +122,7 @@ const Section3 = () => {
           style={{
             position: "absolute",
             right: "-3rem",
-            width: "36%",
+            // width: "36%",
           }}
         />
         <img
@@ -131,7 +133,7 @@ const Section3 = () => {
             position: "relative",
             zIndex: 2,
             width: 735,
-            top: "18%",
+            top: "27%",
             height: 457,
           }}
         />
