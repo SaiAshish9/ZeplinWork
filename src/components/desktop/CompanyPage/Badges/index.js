@@ -3,23 +3,23 @@ import { Typography } from "antd";
 // import Certification from "../../assets/svgs/certification";
 // import Bars from "../../assets/svgs/bars";
 
-import Upskill from "../../../../assets/test1/upskill.png";
-import Explore from "../../../../assets/test1/explore.png";
+import Hire from "../../../../assets/images/easyToHire.png";
+import Manage from "../../../../assets/images/easyToManage.png";
 import Professionally from "../../../../assets/test1/Professionally.svg";
-import Badge from "../../../../assets/test1/badge.svg";
+import Measure from "../../../../assets/images/easyToMeasure.png";
 
 const data = [
   {
     title: "Easy to Hire",
-    icon: Upskill,
+    icon: Hire,
   },
   {
     title: "Easy to Manage",
-    icon: Explore,
+    icon: Manage,
   },
   {
     title: "Easy to Measure",
-    icon: Badge,
+    icon: Measure,
   },
   {
     title: "Easy to Scale",
