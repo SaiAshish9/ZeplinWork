@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   const mediaSIze = useMediaQuery({
-    query: "(min-width:600px)",
+    query: "(min-width:1000px)",
   });
 
   return (

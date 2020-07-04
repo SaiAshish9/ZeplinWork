@@ -1,7 +1,7 @@
 import React,{ useState} from 'react'
 import {Typography,Button} from 'antd'
 import { IoIosArrowForward } from "react-icons/io";
-import "../../desktop/GetStarted/index.css";
+import "../../desktop/Homepage/GetStarted/index.css";
 import Section1 from '../../../assets/images/section1.png'
 
 const GetStarted = () => {

@@ -1,34 +1,15 @@
-import React,{Suspense,Fragment,lazy} from 'react'
-const Navbar = lazy(() => import("../../components/desktop/Navbar"));
-const GetStarted = lazy(() => import("../../components/desktop/GetStarted"));
-const Footer = lazy(() => import("../../components/desktop/Footer"));
-const JoinUs = lazy(() => import("../../components/desktop/JoinUs"));
-const Badges = lazy(() => import("../../components/desktop/Badges"));
-const Experience = lazy(() => import("../../components/desktop/Experience"));
-const Tasks = lazy(() => import("../../components/desktop/Tasks"));
-const Section3 = lazy(() => import("../../components/desktop/Section3"));
-const Section1 = lazy(() => import("../../components/desktop/Section1"));
-
+import React, { Suspense, lazy } from "react";
+import {Switch,Route} from 'react-router-dom'
+const Homepage= lazy(() => import("./Homepage"))
+const CompanyPage=lazy(() => import("./Company_page"))
 
 const Desktop = () => {
     return (
       <Suspense fallback={<div></div>}>
-        <Fragment>
-          <Navbar />
-          <GetStarted />
-          {/* <img */}
-          {/* src={Test} */}
-          {/* alt="test" */}
-          {/* /> */}
-          {/* <Test/> */}
-          <Section1 />
-          <Tasks />
-          <Section3 />
-          <Experience />
-          <Badges />
-          <JoinUs />
-          <Footer />
-        </Fragment>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/company" component={CompanyPage} />
+        </Switch>
       </Suspense>
     );
 }

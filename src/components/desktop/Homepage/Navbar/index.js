@@ -1,9 +1,9 @@
 import React from 'react'
 import { Row, Col, Button, Typography } from "antd";
-import Logo from "../../../assets/images/logo.png";
+import Logo from "../../../../assets/images/logo.png";
+import {withRouter} from "react-router-dom"
 
-
-const Navbar = () => {
+const Navbar = ({history}) => {
     return (
       <React.Fragment>
         <Row
@@ -85,6 +85,9 @@ const Navbar = () => {
                 Download App{" "}
               </Button>
               <Button
+                onClick={() => {
+                  history.push('/company')
+                }}
                 type="text"
                 style={{
                   height: 49,
@@ -106,4 +109,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar
+export default withRouter(Navbar)

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Row, Col, Typography } from "antd";
 // import JobsComponent from "../../assets/svgs/jobsComplete";
-import ArrowBow from "../../../assets/svgs/arrowBow";
+import ArrowBow from "../../../../assets/svgs/arrowBow";
 // import WorkRm from "../../assets/svgs/workRm";
-import WorkRemotely from "../../../assets/test1/workRemotely.svg";
-import Jobs from "../../../assets/test1/jobs.svg";
-import Payments from "../../../assets/test1/payments.svg";
-import Mobile from "../../../assets/test/mobile.png";
-import MobileBg from "../../../assets/test/mobileBg.svg";
-import MobileGrid from "../../../assets/test/mobileGrid.svg";
-import MobileInclinedBg from '../../../assets/test/mobileInclinedBg.svg'
+import WorkRemotely from "../../../../assets/test1/workRemotely.svg";
+import Jobs from "../../../../assets/test1/jobs.svg";
+import Payments from "../../../../assets/test1/payments.svg";
+import Mobile from "../../../../assets/test/mobile.png";
+import MobileBg from "../../../../assets/test/mobileBg.svg";
+import MobileGrid from "../../../../assets/test/mobileGrid.svg";
+import MobileInclinedBg from '../../../../assets/test/mobileInclinedBg.svg'
 
 const Tasks = () => {
   const [selected, setSelected] = useState(0);

@@ -12,11 +12,12 @@ import './assets/fonts/Inter-Medium.ttf'
 import './assets/fonts/Inter-Regular.ttf'
 import './assets/fonts/Inter-SemiBold.ttf'
 import './assets/fonts/Inter-Thin.ttf'
+import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

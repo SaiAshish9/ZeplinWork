@@ -1,11 +1,11 @@
 import React from "react";
 import { Typography, Row } from "antd";
-import GooglePlay from "../../../assets/images/google-play.png";
-import AppStore from "../../../assets/svgs/appStore";
-import QrCode from "../../../assets/svgs/qrCode";
-import ArrowLoop from "../../../assets/svgs/arrowLoop";
-import AndroidMobilePic from '../../../assets/images/AndroidMobile.png'
-import LoginMobilePic from '../../../assets/images/LoginMobile.png'
+import GooglePlay from "../../../../assets/images/google-play.png";
+import AppStore from "../../../../assets/svgs/appStore";
+import QrCode from "../../../../assets/svgs/qrCode";
+import ArrowLoop from "../../../../assets/svgs/arrowLoop";
+import AndroidMobilePic from '../../../../assets/images/AndroidMobile.png'
+import LoginMobilePic from '../../../../assets/images/LoginMobile.png'
 
 const JoinUs = () => {
 
