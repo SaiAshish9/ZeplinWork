@@ -44,10 +44,19 @@ const Section2 = () => {
       <div style={{ width: "60vw" }}>
         <img src={Wave} style={{ position: "absolute", left: 0 }} alt="wave" />
 
-        <div style={{ padding: "9rem 5em" }}>
+        <div style={{ 
+          padding: "9rem 5em",
+          display: "flex",
+          justifyContent: "space-around",
+          flexWrap: "wrap",
+          width: "50rem",
+
+      }}>
           <img
             data-aos={selected === 0 ? "zoom-up" : "fade-up"}
             style={{
+              // position: "absolute",
+              // left: "5rem",
               margin: 10,
               width: selected === 0 ? 300 : 220,
             }}
@@ -57,10 +66,10 @@ const Section2 = () => {
           <img
             data-aos={selected === 1 ? "zoom-up" : "fade-up"}
             style={{
-              position: "absolute",
-              left: "20rem",
+              position: "relative",
+              right: "6rem",
               margin: 10,
-              marginTop: 50,
+              // marginRight: 50,
               width: selected === 1 ? 300 : 220,
             }}
             src={Img2}
@@ -70,9 +79,10 @@ const Section2 = () => {
           <img
             style={{
               position: "relative",
-              bottom: "4rem",
-              width: selected === 2 ? 300 : 220,
+              bottom: "5rem",
               margin: 10,
+              // marginLeft: "3rem",
+              width: selected === 2 ? 300 : 220,
             }}
             data-aos={selected === 2 ? "zoom-up" : "fade-up"}
             src={Img3}
@@ -81,10 +91,11 @@ const Section2 = () => {
           <img
             style={{
               position: "relative",
-              right: "6%",
-              bottom: "5rem",
+              bottom: "6rem",
+              margin: 10,
+              right:"7rem",
+              // marginTop: "13rem",
               width: selected === 3 ? 360 : 220,
-              margin: "10px 0",
             }}
             data-aos={selected === 3 ? "zoom-up" : "fade-up"}
             src={Img4}
