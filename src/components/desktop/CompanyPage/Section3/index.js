@@ -85,7 +85,7 @@ const Section3 = () => {
                   ? "2px solid #7a81ea "
                   : " 1px solid #7a81ea",
               borderTop: k === 0 ? "2px solid #7a81ea " : " 1px solid #7a81ea",
-              width: "60%",
+              width: "27rem",
               display: "flex",
               alignItems: "center",
               padding: "0.7rem 2rem",

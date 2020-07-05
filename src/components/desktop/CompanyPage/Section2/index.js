@@ -114,7 +114,7 @@ const Section2 = () => {
         <div
           style={{
             borderLeft: "2px solid #f4f4f4",
-            padding: "2rem",
+            padding: "1rem",
           }}
         >
           {options.map((i, k) => (
@@ -158,7 +158,7 @@ const Section2 = () => {
                 <p
                   style={{
                     marginLeft: "12%",
-                    width: "60%",
+                    width: "81%",
                     color: "#333e49",
                     fontFamily: "Inter-Medium",
                     fontSize: 16,
