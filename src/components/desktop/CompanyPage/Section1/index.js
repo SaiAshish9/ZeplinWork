@@ -34,7 +34,7 @@ const Section3 = () => {
         marginTop: "10vh",
         // height: "90vh",
         marginBottom: "30vh",
-        flexWrap: "wrap",
+        // flexWrap: "wrap",
       }}
     >
       <div

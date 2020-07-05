@@ -59,7 +59,7 @@ const Section3 = () => {
         marginTop: "10vh",
         // height: "90vh",
         marginBottom: "30vh",
-        flexWrap: "wrap",
+        // flexWrap: "wrap",
       }}
     >
       <div
@@ -135,6 +135,7 @@ const Section3 = () => {
             width: 735,
             top: "27%",
             height: 457,
+            marginRight:20
           }}
         />
       </div>

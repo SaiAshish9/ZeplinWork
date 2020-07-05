@@ -46,7 +46,7 @@ const Partnerships = () => {
           borderRadius: 11,
           boxShadow: "0 6px 25px 0 rgba(0, 0, 0, 0.16)",
           marginBottom: 90,
-          padding: "60px 7rem",
+          padding: "60px 3rem",
           width: "100%",
           display: "flex",
           justifyContent: "space-between",
@@ -77,7 +77,7 @@ const Partnerships = () => {
             display: "flex",
             alignItems:"center",
             boxShadow: '0 8px 18px 0 rgba(0, 0, 0, 0.16)',
-            marginRight: "10%",
+            // marginRight: "10%",
           }}
         >
           <p

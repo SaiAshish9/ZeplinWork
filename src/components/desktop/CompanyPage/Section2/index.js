@@ -57,9 +57,10 @@ const Section2 = () => {
           <img
             data-aos={selected === 1 ? "zoom-up" : "fade-up"}
             style={{
-              position: "relative",
-              right: "7%",
+              position: "absolute",
+              left: "20rem",
               margin: 10,
+              marginTop: 50,
               width: selected === 1 ? 300 : 220,
             }}
             src={Img2}
@@ -91,7 +92,14 @@ const Section2 = () => {
           />
         </div>
       </div>
-      <div style={{ width: "70vw", display: "flex", alignItems: "center" }}>
+      <div
+        style={{
+          marginLeft: 50,
+          width: "70vw",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <div
           style={{
             borderLeft: "2px solid #f4f4f4",
