@@ -145,29 +145,88 @@ const Section3 = () => {
           </div>
         </div>
 
-        <div style={{ width: "50%" }}>
-          <p
-            style={{
-              fontFamily: "Inter-SemiBold",
-              fontSize: 34,
-              lineHeight: "36px",
-              fontWeight: 600,
-              color: "#333e49",
-            }}
-          >
-            {options[selected]['title']}
-          </p>
-          <p
-            style={{
-              fontSize: 20,
-              lineHeight: "30px",
-              // fontFamily: "Inter-SemiBold",
-              color: "#3d3d3d",
-            }}
-          >
-          {options[selected]['desc']}
-          </p>
-        </div>
+        {selected === 0 ? (
+          <div style={{ width: "50%" }}>
+            <p
+              data-aos="fade"
+              className="animate__animated animate__fadeIn"
+              style={{
+                fontFamily: "Inter-SemiBold",
+                fontSize: 34,
+                lineHeight: "36px",
+                fontWeight: 600,
+                color: "#333e49",
+              }}
+            >
+              {options[selected]["title"]}
+            </p>
+            <p
+              data-aos="fade"
+              style={{
+                fontSize: 20,
+                lineHeight: "30px",
+                // fontFamily: "Inter-SemiBold",
+                color: "#3d3d3d",
+              }}
+            >
+              {options[selected]["desc"]}
+            </p>
+          </div>
+        ) : selected === 1 ? (
+          <div style={{ width: "50%" }}>
+            <p
+              data-aos="fade"
+              className="animate__animated animate__fadeIn"
+              style={{
+                fontFamily: "Inter-SemiBold",
+                fontSize: 34,
+                lineHeight: "36px",
+                fontWeight: 600,
+                color: "#333e49",
+              }}
+            >
+              {options[selected]["title"]}
+            </p>
+            <p
+              data-aos="fade"
+              style={{
+                fontSize: 20,
+                lineHeight: "30px",
+                // fontFamily: "Inter-SemiBold",
+                color: "#3d3d3d",
+              }}
+            >
+              {options[selected]["desc"]}
+            </p>
+          </div>
+        ) : (
+          <div style={{ width: "50%" }}>
+            <p
+              data-aos="fade"
+              className="animate__animated animate__fadeIn"
+              style={{
+                fontFamily: "Inter-SemiBold",
+                fontSize: 34,
+                lineHeight: "36px",
+                fontWeight: 600,
+                color: "#333e49",
+              }}
+            >
+              {options[selected]["title"]}
+            </p>
+            <p
+              data-aos="fade"
+              style={{
+                fontSize: 20,
+                lineHeight: "30px",
+                // fontFamily: "Inter-SemiBold",
+                color: "#3d3d3d",
+              }}
+            >
+              {options[selected]["desc"]}
+            </p>
+          </div>
+        )}
       </div>
 
       <div>
@@ -180,18 +239,54 @@ const Section3 = () => {
             // width: "36%",
           }}
         />
-        <img
-          src={images[selected]}
-          data-aos="zoom-up"
-          alt="section3"
+
+        <div
           style={{
             position: "relative",
             zIndex: 2,
-            width: 735,
             top: "27%",
-            height: 457,
           }}
-        />
+          data-aos="zoom-up"
+          // className="animate__animated animate__fadeIn"
+        >
+          {selected === 0 ? (
+            <img
+              className="animate__animated animate__fadeIn"
+              src={images[selected]}
+              alt="section3"
+              style={{
+                width: 735,
+                height: 457,
+              }}
+            />
+          ) : selected === 1 ? (
+            <img
+              className="animate__animated animate__fadeIn"
+              src={images[selected]}
+              alt="section3"
+              style={{
+                position: "relative",
+                zIndex: 2,
+                width: 735,
+                top: "27%",
+                height: 457,
+              }}
+            />
+          ) : (
+            <img
+              src={images[selected]}
+              className="animate__animated animate__fadeIn"
+              alt="section3"
+              style={{
+                position: "relative",
+                zIndex: 2,
+                width: 735,
+                top: "27%",
+                height: 457,
+              }}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

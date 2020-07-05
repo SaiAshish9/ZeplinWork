@@ -4,6 +4,7 @@ import MegaPhone from "../../../../assets/images/megaphone.svg";
 import Discount from "../../../../assets/images/discount.svg";
 import ArrowRight from "../../../../assets/images/arrowRight.svg";
 import { Button } from "antd";
+import ContactUsWave from '../../../../assets/images/companyContactUs.svg'
 
 const opportunities = [
   {
@@ -53,12 +54,24 @@ const Partnerships = () => {
           //   alignItems: "center"
         }}
       >
+        <img
+        src={ContactUsWave}
+        alt="wave"
+        style={{
+          position:"absolute",
+          left:0,
+          zIndex:1,
+          top:0
+      }}
+        />
         <p
           style={{
             color: "#fff",
             fontFamily: "Inter-SemiBold",
             fontSize: "24px",
             lineHeight: "30px",
+            position:"relative",
+            zIndex:2
           }}
         >
           Built from the ground up to save your company money. Save time
