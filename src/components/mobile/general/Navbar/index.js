@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import Logo from "../../../assets/images/logo.png";
 // import { BsFilterLeft } from "react-icons/bs";
 import { Drawer,Button } from "antd";
-import Logo from "../../../assets/images/logo.png";
+import Logo from "../../../../assets/images/logo.png";
 import {GoThreeBars}  from 'react-icons/go'
 import {AiOutlineClose} from 'react-icons/ai'
 

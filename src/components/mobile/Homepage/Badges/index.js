@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography } from "antd";
-import Upskill from "../../../assets/test1/upskill.png";
-import Explore from "../../../assets/test1/explore.png";
-import Professionally from "../../../assets/test1/Professionally.svg";
-import Badge from "../../../assets/test1/badge.svg";
+import Upskill from "../../../../assets/test1/upskill.png";
+import Explore from "../../../../assets/test1/explore.png";
+import Professionally from "../../../../assets/test1/Professionally.svg";
+import Badge from "../../../../assets/test1/badge.svg";
 
 const data = [
   {

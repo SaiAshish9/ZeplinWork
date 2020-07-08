@@ -1,8 +1,7 @@
 import React,{ useState} from 'react'
 import {Typography,Button} from 'antd'
 import { IoIosArrowForward } from "react-icons/io";
-import "../../desktop/Homepage/GetStarted/index.css";
-import Section1 from '../../../assets/images/section1.png'
+import "../../../desktop/CompanyPage/GetStarted/index.css";
 
 const GetStarted = () => {
       const [slide, slideLeft] = useState(false);
@@ -19,7 +18,7 @@ const GetStarted = () => {
             className="animate__animated animate__pulse"
             style={{
               color: "#333e49",
-              fontSize: "2rem",
+              fontSize: "1.8rem",
               fontFamily: "Inter-SemiBold",
               fontWeight: 600,
               textAlign: "center",
@@ -28,8 +27,9 @@ const GetStarted = () => {
               letterSpacing: "normal",
             }}
           >
-            You Got Skills. <br />
-            We Got Work.
+            Grow your business rapidly, anytime & anywhere with our network of
+            <br />
+            on-demand workers{" "}
           </Typography>{" "}
           <p
             className="animate__animated animate__zoomInRight"
@@ -57,14 +57,14 @@ const GetStarted = () => {
               slideLeft(false);
             }}
             type="text"
-            id="getStartedBtn"
+            id="getStartedBtn1"
             style={{
               height: 60,
               width: 263,
               borderRadius: 10,
               margin: "auto",
-              border: "solid 2px #ea907a",
-              color: "#ea907a",
+              border: "solid 2px #7a81ea",
+              color: "#7a81ea",
               fontSize: 22,
               display: "flex",
               alignItems: "center",
@@ -78,17 +78,6 @@ const GetStarted = () => {
               <IoIosArrowForward className="animate__animated animate__fadeIn" />
             )}
           </Button>
-
-          <img
-          data-aos="zoom-in"
-            // className="animate__animated animate__zoomIn"
-            src={Section1}
-            alt="Section1"
-            style={{
-                marginTop:'3rem',
-                width:'90vw'
-            }}
-          />
         </div>
       </React.Fragment>
     );

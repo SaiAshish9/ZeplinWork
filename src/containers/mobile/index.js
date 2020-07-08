@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Switch, Route } from "react-router-dom";
 const Homepage = lazy(() => import("./Homepage"));
-const CompanyPage = lazy(() => import("../desktop/Company_page"));
+const CompanyPage = lazy(() => import("./Company_page"));
 
 const Mobile = () => {
   return (

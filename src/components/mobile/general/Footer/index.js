@@ -1,11 +1,11 @@
 import React from 'react'
 import {Divider,Typography} from 'antd'
-import Logo from "../../../assets/images/logo.png";
-import Instagram from "../../../assets/svgs/instagram";
-import Facebook from "../../../assets/svgs/facebook";
-import Twitter from "../../../assets/svgs/twitter";
-import LinkedIn from "../../../assets/svgs/linkedin";
-import Heart from "../../../assets/svgs/heart";
+import Logo from "../../../../assets/images/logo.png";
+import Instagram from "../../../../assets/svgs/instagram";
+import Facebook from "../../../../assets/svgs/facebook";
+import Twitter from "../../../../assets/svgs/twitter";
+import LinkedIn from "../../../../assets/svgs/linkedin";
+import Heart from "../../../../assets/svgs/heart";
 
   const footerOptions = [
     {
