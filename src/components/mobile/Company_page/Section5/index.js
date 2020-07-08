@@ -77,7 +77,7 @@ const Section5 = () => {
           }}
         >
           Built from the ground up to save your company money. Save time
-          <br /> with Pracify, a tech platform making outsourcing easier and
+          with Pracify, a tech platform making outsourcing easier and
           faster.
         </p>
 
