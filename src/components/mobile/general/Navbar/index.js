@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// import Logo from "../../../assets/images/logo.png";
-// import { BsFilterLeft } from "react-icons/bs";
 import { Drawer,Button } from "antd";
 import Logo from "../../../../assets/images/logo.png";
 import {GoThreeBars}  from 'react-icons/go'
 import {AiOutlineClose} from 'react-icons/ai'
+import {withRouter} from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({history}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -146,6 +145,9 @@ const Navbar = () => {
           </Button>
           <Button
             type="text"
+            onClick={()=>{
+              history.push("/company")
+            }}
             style={{
               height: 49,
               width: "100%",
@@ -165,4 +167,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
