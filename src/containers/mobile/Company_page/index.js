@@ -11,7 +11,7 @@ import Section5 from "../../../components/mobile/Company_page/Section5";
 
 const CompanyPage = () => {
     return (
-      <React.Fragment>
+      <React.Fragment style={{overflowX:'hidden'}}>
         <Navbar />
         <GetStarted />
         <Section1 />

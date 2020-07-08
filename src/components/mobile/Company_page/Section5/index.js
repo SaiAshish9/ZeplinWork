@@ -131,7 +131,7 @@ const Section5 = () => {
         <div
           key={k}
           data-aos="fade-right"
-          data-aos-delay="500"
+          // data-aos-delay="500"
           style={{
             borderRadius: 12,
             // height: 327,
