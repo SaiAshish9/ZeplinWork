@@ -40,7 +40,7 @@ const Section2 = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div>
+    <div style={{ marginBottom: "25rem" }}>
       <div>
         <img
           src={Wave}
@@ -51,6 +51,10 @@ const Section2 = () => {
         <div
           style={{
             display: "flex",
+            position: "absolute",
+            // height: "10rem",
+            left: 0,
+            width: "100vw",
           }}
         >
           <img
@@ -77,8 +81,12 @@ const Section2 = () => {
         <div
           style={{
             display: "flex",
-            position: "relative",
-            bottom: "3rem",
+            position: "absolute",
+            width: "100vw",
+            left: 0,
+            // height: "10rem",
+            // bottom: "3rem",
+            marginTop: selected<2?"11rem":"9rem",
           }}
         >
           <img
@@ -108,6 +116,9 @@ const Section2 = () => {
           style={{
             borderLeft: "2px solid #f4f4f4",
             padding: "1rem",
+            // marginTop:
+            position: "relative",
+            top: "22rem",
           }}
         >
           {options.map((i, k) => (
@@ -136,9 +147,9 @@ const Section2 = () => {
                     data-aos="fade"
                     style={{
                       margin: "auto",
-                      marginLeft: '1rem',
+                      marginLeft: "1rem",
                       fontFamily: "Inter-SemiBold",
-                      fontSize: '1.3rem',
+                      fontSize: "1.3rem",
                       lineHeight: "34px",
                       color: "#333e49",
                       opacity: selected !== k && 0.3,
@@ -156,7 +167,7 @@ const Section2 = () => {
                     // width: "81%",
                     color: "#333e49",
                     fontFamily: "Inter-Medium",
-                    fontSize: '1rem',
+                    fontSize: "1rem",
                     lineHeight: "30px",
                   }}
                 >

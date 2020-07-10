@@ -46,7 +46,7 @@ const GetStarted = () => {
               marginTop: 24,
             }}
           >
-            Earn money and experience while working on your own schedule
+            Remote Workers, Real Results{" "}
           </p>
           <Button
             className="animate__animated animate__zoomIn"
