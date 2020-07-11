@@ -40,28 +40,40 @@ const Section2 = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div style={{ marginBottom: "25rem" }}>
+    <div style={{ marginBottom: "5rem" }}>
       <div>
-        <img
-          src={Wave}
-          style={{ position: "absolute", left: 0, width: "80%" }}
-          alt="wave"
-        />
-
         <div
           style={{
             display: "flex",
-            position: "absolute",
-            // height: "10rem",
+            // position: "absolute",
+            // height: "20rem",
+            // flexShrink: 2,
+            justifyContent: "space-around",
+            // flexWrap: "wrap",
+            width: "90vw",
+            marginLeft:"10vw",
+            // padding:"0 20%",
+            // backgroundRepeat: "no-repeat",
+            // backgroundPosition: "center center",
             left: 0,
-            width: "100vw",
+            paddingTop:"1rem"
           }}
         >
+          <img
+            src={Wave}
+            style={{
+              position: "absolute",
+              left: 0,
+              // bottom:"1rem",
+              width: "80%",
+            }}
+            alt="wave"
+          />
           <img
             data-aos={selected === 0 ? "zoom-up" : "fade-up"}
             style={{
               margin: 10,
-              width: selected === 0 ? "60%" : "40%",
+              width: selected === 0? "60%":"7rem",
             }}
             src={Img1}
             alt="img"
@@ -72,7 +84,7 @@ const Section2 = () => {
               position: "relative",
               right: "3rem",
               margin: 10,
-              width: selected === 1 ? "60%" : "40%",
+              width: selected === 1 ?"60%": "7rem",
             }}
             src={Img2}
             alt="img"
@@ -81,19 +93,18 @@ const Section2 = () => {
         <div
           style={{
             display: "flex",
-            position: "absolute",
-            width: "100vw",
-            left: 0,
-            // height: "10rem",
-            // bottom: "3rem",
-            marginTop: selected<2?"11rem":"9rem",
+            justifyContent: "space-around",
+            width: "90vw",
+            marginLeft: "10vw",
+            position: "relative",
+            bottom:"3rem"
           }}
         >
           <img
             style={{
-              position: "relative",
+              // position: "relative",
               margin: 10,
-              width: selected === 2 ? "60%" : "40%",
+              width: selected === 2 ?"60%": "7rem",
             }}
             data-aos={selected === 2 ? "zoom-up" : "fade-up"}
             src={Img3}
@@ -104,7 +115,7 @@ const Section2 = () => {
               margin: 10,
               position: "relative",
               right: "2.7rem",
-              width: selected === 3 ? "60%" : "40%",
+              width: selected === 3 ?"60%": "7rem",
             }}
             data-aos={selected === 3 ? "zoom-up" : "fade-up"}
             src={Img4}
@@ -118,7 +129,7 @@ const Section2 = () => {
             padding: "1rem",
             // marginTop:
             position: "relative",
-            top: "22rem",
+            // top: "22rem",
           }}
         >
           {options.map((i, k) => (
