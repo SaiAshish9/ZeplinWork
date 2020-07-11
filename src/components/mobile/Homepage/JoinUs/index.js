@@ -83,8 +83,9 @@ const JoinUs = () => {
           <div
             style={{
               border: "1px solid white",
-              width: "70vw",
+              width: "15rem",
               borderRadius: 18,
+              padding:0,
               margin: "2rem auto",
               // position: "relative",
               // right:"1rem"
@@ -97,7 +98,7 @@ const JoinUs = () => {
                 src={AndroidMobilePic}
                 alt="android"
                 style={{
-                  width: "70vw",
+                  width: "15rem",
                 }}
               />
               <img
@@ -106,7 +107,7 @@ const JoinUs = () => {
                 src={LoginMobilePic}
                 alt="android"
                 style={{
-                  width: "70vw",
+                  width: "15rem",
                 }}
               />
             </Carousel>
