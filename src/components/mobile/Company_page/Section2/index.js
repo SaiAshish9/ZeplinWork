@@ -40,23 +40,23 @@ const Section2 = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div style={{ marginBottom: "5rem" }}>
+    <div style={{ marginBottom: "5rem", height: "58rem" }}>
       <div>
         <div
           style={{
             display: "flex",
             // position: "absolute",
-            // height: "20rem",
+            height: selected < 2 ? "15rem" : "12rem",
             // flexShrink: 2,
             justifyContent: "space-around",
             // flexWrap: "wrap",
             width: "90vw",
-            marginLeft:"10vw",
+            marginLeft: "10vw",
             // padding:"0 20%",
             // backgroundRepeat: "no-repeat",
             // backgroundPosition: "center center",
             left: 0,
-            paddingTop:"1rem"
+            paddingTop: "1rem",
           }}
         >
           <img
@@ -73,7 +73,7 @@ const Section2 = () => {
             data-aos={selected === 0 ? "zoom-up" : "fade-up"}
             style={{
               margin: 10,
-              width: selected === 0? "60%":"7rem",
+              width: selected === 0 ? "60%" : "7rem",
             }}
             src={Img1}
             alt="img"
@@ -84,7 +84,7 @@ const Section2 = () => {
               position: "relative",
               right: "3rem",
               margin: 10,
-              width: selected === 1 ?"60%": "7rem",
+              width: selected === 1 ? "60%" : "7rem",
             }}
             src={Img2}
             alt="img"
@@ -95,16 +95,17 @@ const Section2 = () => {
             display: "flex",
             justifyContent: "space-around",
             width: "90vw",
+            height: selected > 2 ? "15rem" : "10rem",
             marginLeft: "10vw",
             position: "relative",
-            bottom:"3rem"
+            bottom: "3rem",
           }}
         >
           <img
             style={{
               // position: "relative",
               margin: 10,
-              width: selected === 2 ?"60%": "7rem",
+              width: selected === 2 ? "60%" : "7rem",
             }}
             data-aos={selected === 2 ? "zoom-up" : "fade-up"}
             src={Img3}
@@ -115,7 +116,7 @@ const Section2 = () => {
               margin: 10,
               position: "relative",
               right: "2.7rem",
-              width: selected === 3 ?"60%": "7rem",
+              width: selected === 3 ? "60%" : "7rem",
             }}
             data-aos={selected === 3 ? "zoom-up" : "fade-up"}
             src={Img4}
