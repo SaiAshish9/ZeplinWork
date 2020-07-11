@@ -11,7 +11,10 @@ import Section5 from "../../../components/mobile/Company_page/Section5";
 
 const CompanyPage = () => {
     return (
-      <React.Fragment style={{overflowX:'hidden'}}>
+      <div style={{
+        position: "absolute",
+        right:0,
+        width:"100vw",overflowX:'hidden'}}>
         <Navbar />
         <GetStarted />
         <Section1 />
@@ -21,7 +24,7 @@ const CompanyPage = () => {
         <Section4/>
         <Section5/>
         <Footer />
-      </React.Fragment>
+      </div>
     );
 }
 
