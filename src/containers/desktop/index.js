@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import {Switch,Route} from 'react-router-dom'
 const Homepage= lazy(() => import("./Homepage"))
 const CompanyPage=lazy(() => import("./Company_page"))
-const Terms=lazy(()=>import("./TermsAndConditions"))
+const Terms=lazy(()=>import("./TermsAndConditions"));
 const PrivacyPolicy = lazy(() => import("./PrivacyPolicy"));
 
 const Desktop = () => {
