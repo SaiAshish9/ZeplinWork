@@ -80,6 +80,7 @@ const Footer = () => {
                     fontWeight: 500,
                     lineHeight: "30px",
                     fontSize: 14,
+                    cursor:'pointer',
                     fontFamily: "Inter-Medium",
                   }}
                 >
