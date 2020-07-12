@@ -7,8 +7,11 @@ import Instagram from "../../../../assets/svgs/instagram"
 import Facebook from "../../../../assets/svgs/facebook"
 import Twitter from "../../../../assets/svgs/twitter"
 import LinkedIn from "../../../../assets/svgs/linkedin"
+import {useHistory} from 'react-router-dom'
 
 const Footer = () => {
+
+  const history = useHistory()
   const footerOptions = [
     {
       title: "Company",
@@ -111,11 +114,21 @@ const Footer = () => {
                 {i.options.map((a, b) => (
                   <Typography
                     key={b}
+                    onClick={
+                      ()=>{
+                      if(k===2&&b===0){
+                        history.push('/terms')
+                      }else if(k===2 && b===1){
+                        history.push('/privacy_policy')
+                      }
+                      }
+                    }
                     style={{
                       color: "#959595",
                       fontWeight: 500,
                       lineHeight: "30px",
                       fontSize: 14,
+                      cursor: "pointer",
                       fontFamily: "Inter-Medium",
                     }}
                   >
